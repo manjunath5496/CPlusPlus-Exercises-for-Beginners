@@ -375,19 +375,20 @@ return 0;
 
 <strong>Solution: </strong>
 
-```C language
-#include<stdio.h>
+```C++ language
+#include<iostream>
+using namespace std;
 int main()
 {
 int a;
 a = -35;
 if(a>0)
 {
-printf("Number is positive");
+cout<<"Number is positive";
 }
 else
 {
-printf(" Number entered is negative");
+cout<<" Number entered is negative";
 }
 return 0;
 }
