@@ -1046,14 +1046,15 @@ return 0;
 
 <strong>Solution: </strong>
 
-```C language
-#include<stdio.h>
+```C++ language
+#include<iostream>
+using namespace std;
 int main()
 {
 int i = 1;
 while (i<=10)
 {
-printf("%d\n", i++);
+cout<<"\n "<< i++;
 }
 return 0;
 }
