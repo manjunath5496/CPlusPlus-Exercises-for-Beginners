@@ -840,21 +840,22 @@ return 0;
 
 <strong>Solution: </strong>
 
-```C language
-#include<stdio.h>
+```C++ language
+#include<iostream>
+using namespace std;
 int square();
 int main()
 {
 int answer;
 answer = square();
-printf("Square of the given number=%d", answer);
-return(0);
+cout<<"Square of the given number = "<< answer;
+return 0;
 }
 int square()
 {
 int x;
-printf("Enter any integer:");
-scanf("%d", &x);
+cout<<"Enter any integer:";
+cin>>x;
 return x*x;
 }
 ```
@@ -870,13 +871,14 @@ return x*x;
 
 <strong>Solution: </strong>
 
-```C language
-#include<stdio.h>
+```C++ language
+#include<iostream>
+using namespace std;
 int main()
 {
 int i;
 for (i =1; i<=10; i ++)
-printf("hello world \n");
+cout<<"\n hello world";
 return 0;
 }
 ```
@@ -893,14 +895,15 @@ return 0;
 
 <strong>Solution: </strong>
 
-```C language
-#include<stdio.h>
+```C++ language
+#include<iostream>
+using namespace std;
 int main()
 {
 int i =1;
 do
 {
-printf("%d\n", i++);
+cout<<" \n i= "<< i++;
 } while (i<=5);
 return 0;
 }
@@ -921,14 +924,15 @@ body [y] = y</br>***
 
 <strong>Solution: </strong>
 
-```C language
-#include <stdio.h>
+```C++ language
+#include <iostream>
+using namespace std;
 int main()
 {
 char i;
 char body [4] = {'b', 'o', 'd', 'y'};
 for(i=0; i<4; i++)
-printf("\n body[%c] = %c", body[i] , body[i]);
+cout<<"\n body ["<<body[i] <<" ] = "<< body[i] << endl;
 return 0;
 }
 ```
@@ -943,7 +947,7 @@ return 0;
 
 ---------------------------------------
 
-```C language
+```C++ language
 #include<stdio.h>
 #include<stdlib.h>
 int main () {
@@ -1064,8 +1068,9 @@ return 0;
 
 ---------------------------------------
 
-```C language
-#include <stdio.h>
+```C++ language
+#include <iostream>
+using namespace std;
 int main()
 {
 int i;
@@ -1075,7 +1080,7 @@ if (i==3)
 {
 continue;
 }
-printf("%d\n ", i);
+cout<<"\n "<< i;
 }
 return 0;
 }
@@ -1130,8 +1135,9 @@ int main()
 
 ----------------------------------------
 
-```C language
-#include <stdio.h>
+```C++ language
+#include <iostream>
+using namespace std;
 int main()
 {
 int i;
@@ -1141,7 +1147,7 @@ if (i==3)
 {
 break;
 }
-printf("%d\n", i);
+cout<<"\n "<< i;
 }
 return 0;
 }
@@ -1243,13 +1249,13 @@ The name you entered = Denni
 ```
 ----------------------------------------
 
-```C language
-#include <stdio.h>
+```C++ language
+#include <iostream>
+using namespace std;
 int main()
 {
-for( ; ; ) 
-{
-printf("This loop will run forever.\n");
+for( ; ; ) {
+cout<<"This loop will run forever.\n";
 }
 return 0;
 }
@@ -1297,20 +1303,20 @@ Hello,world!
 
 <strong>Solution: </strong>
 
-```C language
-#include<stdio.h>
+```C++ language
+#include<iostream>
+using namespace std;
 int main()
 {
 int age;
-printf("Enter age:");
-scanf("%d", &age);
-if(age>=60)
+age=20;
+if(age > = 60)
 {
-printf("senior citizen");
+cout<<"Senior citizen";
 }
-else
+if(age<60)
 {
-printf("not a senior citizen");
+cout<<"Not a senior citizen";
 }
 return 0;
 }
