@@ -8,16 +8,28 @@
 
 <strong>Solution: </strong>
 
-```C language
-#include<stdio.h>
+```C++ language
+#include<iostream>
 int main()
 {
-printf("Hello,world!");
+std::cout<<"Hello World!";
 return 0;
 }
 ```
 ----------------------------------------
 
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+using namespace std;
+int main()
+{
+cout<<"Hello World!";
+return 0;
+}
+```
+----------------------------------------
 
 # Question 2
 
@@ -29,14 +41,16 @@ return 0;
 
 <strong>Solution: </strong>
 
-```C language
-#include<stdio.h>
+```C++ language
+#include<iostream>
+using namespace std;
 int main()
 {
-int r, area;
-r = 2;
+float r, area;
+cout<<"Enter any number:";
+cin>>r;
 area = 4 * 3.14 * r * r;
-printf("The area of the circle = %d", area);
+cout<<"The area of the circle = "<< area;
 return 0;
 }
 ```
@@ -52,15 +66,17 @@ return 0;
 
 <strong>Solution: </strong>
 
-```C language
-#include<stdio.h>
+```C++ language
+#include<iostream>
+using namespace std;
 int main()
 {
-int a, b, sum;
-a=1;
-b=2;
-sum = a + b;
-printf("The sum of a and b = %d", sum);
+float a, b, sum;
+cout<<"Enter any two numbers:";
+cin>>a;
+cin>>b;
+sum = a+ b;
+cout<<"The sum of a and b = "<< sum;
 return 0;
 }
 ```
@@ -76,15 +92,15 @@ return 0;
 
 <strong>Solution: </strong>
 
-```C language
-#include<stdio.h>
-#include<math.h>
+```C++ language
+#include<iostream>
+using namespace std;
 int main()
 {
 int a, b;
 a=2;
-b = pow((a), 2);
-printf("The square of a = %d", b);
+b = a * a;
+cout<<"The square of a = "<< b;
 return 0;
 }
 ```
@@ -100,8 +116,9 @@ return 0;
 
 <strong>Solution: </strong>
 
-```C language
-#include<stdio.h>
+```C++ language
+#include<iostream>
+using namespace std;
 int main()
 {
 int a, b;
@@ -109,11 +126,11 @@ a = 2;
 b = 3;
 if(a>b)
 {
-printf("a is greater than b");
+cout<<"a is greater than b";
 }
 else
 {
-printf("b is greater than a");
+cout<<"b is greater than a";
 }
 return 0;
 }
@@ -130,8 +147,9 @@ return 0;
 
 <strong>Solution: </strong>
 
-```C language
-#include<stdio.h>
+```C++ language
+#include<iostream>
+using namespace std;
 int main()
 {
 int i, avg, sum = 0;
@@ -139,8 +157,8 @@ int num [5] = {16, 18, 20, 25, 36};
 for(i=0; i<5; i++)
 sum = sum + num [i];
 avg = sum/5;
-printf("Sum of the Elements in the array = %d", sum);
-printf("Average of the elements in the array= %d", avg);
+cout<<"Sum of the Elements in the array = "<< sum <<endl;
+cout<<"Average of the elements in the array= "<< avg<<endl;
 return 0;
 }
 ```
@@ -156,33 +174,34 @@ return 0;
 
 <strong>Solution: </strong>
 
-```C language
-#include<stdio.h>
+```C++ language
+#include<iostream>
+using namespace std;
 int main()
 {
 char ch;
-printf("Enter any character:");
-scanf("%c", &ch);
+cout<<"Enter any character:";
+cin>>ch;
 switch(ch)
 {
 case 'R':
-printf("Red");
+cout<<"Red";
 break;
 case 'W':
-printf("White");
+cout<<"White";
 break;
 case 'Y':
-printf("Yellow");
+cout<<"Yellow";
 break;
 case 'G':
-printf("Green");
+cout<<"Green";
 break;
 default:
-printf("Error");
+cout<<"Error";
 break;
 }
 return 0;
-} 
+}
 ```
 ----------------------------------------
 
@@ -196,24 +215,25 @@ return 0;
 
 <strong>Solution: </strong>
 
-```C language
-#include<stdio.h>
+```C++ language
+#include<iostream>
+using namespace std;
 int main()
 {
 int x, y, *p, *q;
-printf("Enter any integer:");
-scanf("%d", &x);
-printf("Enter any integer:");
-scanf("%d", &y);
+cout<<"Enter any integer:";
+cin>> x;
+cout<<"Enter any integer:";
+cin>> y;
 p = &x;
 q = &y;
 if(*p>*q)
 {
-printf("x is greater than y");
+cout<<"x is greater than y";
 }
-if(*q>*p)
+else
 {
-printf("y is greater than x");
+cout<<"y is greater than x";
 }
 return 0;
 }
@@ -230,17 +250,19 @@ return 0;
 
 <strong>Solution: </strong>
 
-```C language
-#include <stdio.h>
+```C++ language
+#include<iostream>
+using namespace std;
 int main()
 {
 int x, *p;
-x = 1;
+cout<<"Enter any integer:";
+cin>>x;
 p = &x;
-printf("The address of the variable x =%d", p);
-printf("The value of the variable x =%d", *p);
+cout<<"The address of the variable x = "<< p<<endl;
+cout<<"The value of the variable x = "<< *p<<endl;
 return 0;
-} 
+}
 ```
 ----------------------------------------
 
@@ -254,15 +276,16 @@ return 0;
 
 <strong>Solution: </strong>
 
-```C language
-#include<stdio.h>
+```C++ language
+#include<iostream>
+using namespace std;
 int main()
 {
 int i;
 for( i=1; i<=10; i++)
-printf("Number=%d its square=%d its cube=%d\n", i , i*i, i*i*i);
+cout<<"number = "<< i <<" its square = "<< i*i <<" its cube = "<< i*i*i<< endl;
 return 0;
-} 
+}
 ```
 ----------------------------------------
 
@@ -278,16 +301,17 @@ Output must be: ch = M.***
 
 <strong>Solution: </strong>
 
-```C language
-#include<stdio.h>
+```C++ language
+#include<iostream>
+using namespace std;
 int main()
 {
 char M;
-printf("Enter any character:");
-scanf("%c", &M);
-printf("ch=%c", M);
+cout<<"Enter any character:";
+cin>>M;
+cout<<"ch= "<< M;
 return 0;
-} 
+}
 ```
 ----------------------------------------
 
@@ -301,15 +325,16 @@ return 0;
 
 <strong>Solution: </strong>
 
-```C language
-#include<stdio.h>
+```C++ language
+#include<iostream>
+using namespace std;
 int main()
 {
 int n, i;
-printf("Enter any number:");
-scanf("%d", &n);
+cout<<"Enter any number:";
+cin>>n;
 for( i=1; i<=5; i++)
-printf("%d * %d = %d\n", n, i, n*i);
+cout<< n <<" * "<< i <<" = "<< n*i <<endl;
 return 0;
 }
 ```
@@ -326,14 +351,15 @@ return 0;
 
 <strong>Solution: </strong>
 
-```C language
-#include<stdio.h>
+```C++ language
+#include<iostream>
+using namespace std;
 int main()
 {
 int i, product = 1;
 for( i=1; i<=10; i++)
 product = product * i;
-printf("The product of the first 10 digits =%d", product);
+cout<<"The product of the first 10 digits = " << product;
 return 0;
 }
 ```
