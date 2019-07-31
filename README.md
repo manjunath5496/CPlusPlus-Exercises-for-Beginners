@@ -405,22 +405,23 @@ return 0;
 
 <strong>Solution: </strong>
 
-```C language
-#include<stdio.h>
+```C++ language
+#include<iostream>
+using namespace std;
 int main()
 {
 int x, y;
-printf("Enter any number:");
-scanf ("%d", &x);
-printf("Enter any number:");
-scanf ("%d", &y);
+cout<<"Enter any number:";
+cin>>x;
+cout<<"Enter any number:";
+cin>>y;
 if(x-y==0)
 {
-printf("The two numbers are equivalent");
+cout<<"The two numbers are equivalent";
 }
 else
 {
-printf("The two numbers are not equivalent");
+cout<<"The two numbers are not equivalent";
 }
 return 0;
 }
@@ -437,17 +438,18 @@ return 0;
 
 <strong>Solution: </strong>
 
-```C language
-#include<stdio.h>
+```C++ language
+#include<iostream>
+using namespace std;
 int main()
 {
 int a, b, c;
-printf("Enter any number:");
-scanf("%d", &a);
-printf("Enter any number:");
-scanf("%d", &b);
-c = a%b;
-printf("The remainder of a and b = %d", c);
+cout<<"Enter any number:";
+cin>>a;
+cout<<"Enter any number:";
+cin>>b;
+c = a % b;
+cout<<"The remainder of a and b = "<< c;
 return 0;
 }
 ```
@@ -463,20 +465,21 @@ return 0;
 
 <strong>Solution: </strong>
 
-```C language
-#include<stdio.h>
+```C++ language
+#include<iostream>
+using namespace std;
 int main()
 {
 int a;
-printf("Enter any number:");
-scanf ("%d", &a);
+cout<<"Enter any number:";
+cin>>a;
 if(a%2 = = 0)
 {
-printf("The number is even");
+cout<<"The number is even";
 }
 else
 {
-printf("The number is odd");
+cout<<"The number is odd";
 }
 return 0;
 }
@@ -493,13 +496,16 @@ return 0;
 
 <strong>Solution: </strong>
 
-```C language
-#include<stdio.h>
+```C++ language
+#include<iostream>
+using namespace std;
 int main()
 {
-char a;
-for( a='A'; a<='Z'; a++)
-printf("%c\n", a);
+char a = 'A';
+while (a<='Z')
+{
+cout<<" \n"<< a++;
+}
 return 0;
 }
 ```
@@ -515,8 +521,9 @@ return 0;
 
 <strong>Solution: </strong>
 
-```C language
-#include<stdio.h>
+```C++ language
+#include<iostream>
+using namespace std;
 int main()
 {
 int a, b, c, d, e, f;
@@ -526,10 +533,10 @@ c=a+1;
 d=b+1;
 e=a-1;
 f=b-1;
-printf("The incremented value of a =%d", c);
-printf("The incremented value of b =%d", d);
-printf("The decremented value of a =%d", e);
-printf("The decremented value of b =%d", f);
+cout<<"The incremented value of a = "<< c << endl;
+cout<<"The incremented value of b = "<< d << endl;
+cout<<"The decremented value of a = "<< e << endl;
+cout<<"The decremented value of b = "<< f << endl;
 return 0;
 }
 ```
@@ -545,16 +552,20 @@ return 0;
 
 <strong>Solution: </strong>
 
-```C language
-#include<stdio.h>
+```C++ language
+#include<iostream>
+using namespace std;
 int main()
 {
 int P,T, R, SI;
-P = 1000;
-T = 2;
-R = 3;
+cout<<"Enter principal amount:";
+cin>>P;
+cout<<"Enter time:";
+cin>>T;
+cout<<"Enter rate of interest:";
+cin>>R;
 SI = P*T*R/100;
-printf("The simple interest = %d", SI);
+cout<<"the simple interest = "<<SI;
 return 0;
 }
 ```
@@ -570,28 +581,29 @@ return 0;
 
 <strong>Solution: </strong>
 
-```C language
-#include<stdio.h>
+```C++ language
+#include<iostream>
+using namespace std;
 int main()
 {
 int a, b, c;
-printf("Enter any number:");
-scanf("%d", &a);
-printf("Enter any number:");
-scanf("%d", &b);
-printf("Enter any number:");
-scanf("%d", &c);
+cout<<"Enter any number:";
+cin>>a;
+cout<<"Enter any number:";
+cin>>b;
+cout<<"Enter any number:";
+cin>>c;
 if(a>b&&a>c)
 {
-printf("%d is greater than %d and %d", a, b, c);
+cout<< a<<" is greater than "<< b<<" and "<<c;
 }
 else if (b>a&&b>c)
 {
-printf("%d is greater than %d and %d", b, a, c);
+cout<< b<<" is greater than "<< a <<" and "<<c;
 }
 else
 {
-printf("%d is greater than %d and %d", c, b, a);
+cout<< c<<" is greater than "<< b<<" and "<< a;
 }
 return 0;
 }
@@ -608,19 +620,21 @@ return 0;
 
 <strong>Solution: </strong>
 
-```C language
-#include<stdio.h>
+```C++ language
+#include<iostream>
+using namespace std;
 int main()
 {
 int i, n, fact=1 ;
-printf("Enter any number:");
-scanf("%d", &n);
+cout<<"Enter any number:";
+cin>>n;
 for(i=1; i<=n; i++)
 fact = fact *i;
-printf("\n Entered number is: %d", n);
-printf("\n The factorial of the entered number %d is: %d", n, fact);
+cout<<"\n Entered number is: "<< n;
+cout<<"\n The factorial of the entered number "<< n <<" is: "<< fact;
 return 0;
 }
+
 ```
 ----------------------------------------
 
@@ -635,14 +649,15 @@ return 0;
 <strong>Solution: </strong>
 
 ```C language
-#include<stdio.h>
+#include<iostream>
 #include<string.h>
+using namespace std;
 int main()
 {
 char ch[4];
-printf("Enter any word: ");
-scanf("%c", &ch);
-printf("The length of the string = %d", strlen(ch));
+cout<<"Enter any word: ";
+cin>>ch;
+cout<<"The length of the string = "<< strlen(ch);
 return 0;
 }
 ```
@@ -658,13 +673,16 @@ return 0;
 
 <strong>Solution: </strong>
 
-```C language
-#include<stdio.h>
+```C++ language
+#include <iostream>
+using namespace std;
 int main()
 {
-char ch ='A';
-printf("The ASCII value of ch is: %d", ch);
-return 0;
+ char c;
+ cout << "Enter a character: ";
+ cin >> c;
+ cout << "ASCII Value of " << c << " is " << int(c);
+ return 0;
 }
 ```
 ----------------------------------------
@@ -680,15 +698,16 @@ return 0;
 
 <strong>Solution: </strong>
 
-```C language
-#include<stdio.h>
+```C++ language
+#include<iostream>
+using namespace std;
 int main()
 {
 char ch = 'a';
 if(islower(ch))
-printf("you have entered the lower case letter");
+cout<<"you have entered the lower case letter";
 else
-printf("you have entered the upper case letter");
+cout<<"you have entered the upper case letter";
 return 0;
 }
 ```
@@ -705,15 +724,16 @@ return 0;
 
 <strong>Solution: </strong>
 
-```C language
-#include<stdio.h>
+```C++ language
+#include<iostream>
+using namespace std;
 int main()
 {
 char ch = 'a';
 if(isupper(ch))
-printf("you have entered the upper case letter");
+cout<<"you have entered the upper case letter";
 else
-printf("you have entered the lower case letter");
+cout<<"you have entered the lower case letter";
 return 0;
 }
 ```
@@ -729,13 +749,14 @@ return 0;
 
 <strong>Solution: </strong>
 
-```C language
-#include<stdio.h>
+```C++ language
+#include<iostream>
+using namespace std;
 int main()
 {
 char ch = 'a';
 char b = toupper(ch);
-printf("lower case letter %c is converted to upper case letter %c", ch, b);
+cout<<" lower case letter "<<ch<<" is converted to upper case letter "<<b;
 return 0;
 }
 ```
@@ -759,14 +780,15 @@ Einstein [7] = N</br>***
 
 <strong>Solution: </strong>
 
-```C language
-#include<stdio.h>
+```C++ language
+#include<iostream>
+using namespace std;
 int main()
 {
 int i;
-char name [8] = {' E' , ' I', ' N', ' S', ' T ', ' E', ' I', ' N'};
+char name [8] = {'E' , 'I', 'N', 'S', 'T', 'E', 'I', 'N'};
 for(i=0; i<8; i++)
-printf("\n Element [%d] = %c", i, name[i]);
+cout<<"Element ["<< i <<" ] = "<< name[i] << endl;
 return 0;
 }
 ```
@@ -787,8 +809,9 @@ using structures.***
 
 <strong>Solution: </strong>
 
-```C language
-#include<stdio.h>
+```C++ language
+#include<iostream>
+using namespace std;
 int main()
 {
 struct book {
@@ -797,15 +820,11 @@ float price;
 int pages;
 int edition;
 };
-struct book b1;
-b1.name = 'B';
-b1.price = 135.00;
-b1.pages = 300;
-b1.edition = 8;
-printf("\n Name of the book = %c", b1.name);
-printf("\n Price of the book = %f", b1.price);
-printf("\n Number of pages = %d", b1.pages);
-printf("\n Edition of the book = %d", b1.edition);
+struct book b1= {'B', 135.00, 300, 8};
+cout<<"Name of the book = "<< b1.name<< endl;
+cout<<"Price of the book = "<< b1.price<<endl;
+cout<<"Number of pages = "<< b1.pages<<endl;
+cout<<"Edition of the book = "<< b1.edition<< endl;
 return 0;
 }
 ```
