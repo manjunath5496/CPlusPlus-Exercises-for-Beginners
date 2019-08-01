@@ -1009,27 +1009,28 @@ If purchase value is greater than 10000, 30% discount.***
 
 <strong>Solution: </strong>
 
-```C language
-#include<stdio.h>
+```C++ language
+#include<iostream>
+using namespace std;
 int main()
 {
 double PV;
-printf("Enter purchased value:");
-scanf("%lf", &PV);
+cout<<"Enter purchased value:";
+cin>>PV;
 if(PV>1000)
 {
-printf("\n Discount=%lf", PV* 0.1);
-printf("\n Total=%lf", PV - PV* 0.1);
+cout<<"Discount = "<< PV* 0.1 << endl;
+cout<<"Total= "<< PV - PV* 0.1 << endl;
 }
 else if(PV>5000)
 {
-printf("\n Discount =%lf", PV* 0.2);
-printf("\n Total=%lf", PV - PV* 0.1);
+cout<<"Discount = "<< PV* 0.2 << endl;
+cout<<"Total= "<< PV - PV* 0.1 << endl;
 }
 else
 {
-printf("\n Discount=%lf", PV* 0.3);
-printf("\n Total=%lf", PV - PV* 0.1);
+cout<<"Discount = "<< PV* 0.3 << endl;
+cout<<"Total= "<< PV - PV* 0.1 << endl;
 }
 return 0;
 }
