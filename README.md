@@ -976,19 +976,19 @@ linux
 
 <strong>Solution: </strong>
 
-```C language
-#include <stdio.h>
-#include <ctype.h>
+```C++ language
+#include <iostream>
+using namespace std;
 int main()
 {
 int a =2;
 if( isalpha(a) )
 {
-printf(" The character a is an alphabet");
+   cout<<"The character a is an alphabet"; 
 }
 else
 {
-printf("The character a is not an alphabet");
+cout<<"The character a is not an alphabet"; 
 }
 return 0;
 }
