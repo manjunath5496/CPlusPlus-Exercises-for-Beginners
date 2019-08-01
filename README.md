@@ -1279,20 +1279,21 @@ This loop will run forever. .........
 ----------------------------------------
 
 
-```C language
-#include<stdio.h>
+```C++ language
+#include<iostream>
+using namespace std;
 int main()
 {
-printf("Hello,world!");
+cout<<"Hello World!";
 return 0;
-printf("Hello,world!");
+cout<<"Hello World!";
 }
 ```
 ----------------------------------------
 
 <strong>Solution: </strong>
 
-```C language
+```C++ language
 Hello,world! 
 ```
 ----------------------------------------
