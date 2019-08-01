@@ -1109,8 +1109,9 @@ return 0;
 
 <strong>Solution: </strong>
 
-```C language
-#include <stdio.h>
+```C++ language
+#include <iostream>
+using namespace std;
 int main()
 {
    int num [] = {11, 22, 33, 44, 55, 66};
@@ -1123,7 +1124,7 @@ int main()
      * types such as int, char, float etc.
      */
     n = sizeof(num) / sizeof(num [0]);
-    printf("Size of the array is: %d\n", n);
+    cout<<"Size of the array is:"<<n;
     return 0;
 }
 ```
