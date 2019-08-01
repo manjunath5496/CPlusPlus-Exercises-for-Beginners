@@ -982,7 +982,7 @@ using namespace std;
 int main()
 {
 int a =2;
-if( isalpha(a) )
+if(isalpha(a))
 {
    cout<<"The character a is an alphabet"; 
 }
