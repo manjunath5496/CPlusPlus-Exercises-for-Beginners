@@ -1232,14 +1232,16 @@ The value of y = 27
 ```
 ----------------------------------------
 
-```C language
-#include<stdio.h>
+```C++ language
+#include<iostream>
+#include<cmath>
+using namespace std;
 int main()
 {
-char ch [5];
-printf( "Enter the name: ");
-scanf("%s", &ch);
-printf( "The name you entered = %s", ch);
+int a, b;
+a= - 2;
+b= abs(a);
+cout<<" Absolute value = "<< b<< endl;
 return 0;
 }
 ```
@@ -1247,10 +1249,8 @@ return 0;
 
 <strong>Solution: </strong>
 
-```C language
-Enter the name:
-Dennis
-The name you entered = Denni
+```C++ language
+Absolute value = 2
 ```
 ----------------------------------------
 
