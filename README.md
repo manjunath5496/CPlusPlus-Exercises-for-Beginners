@@ -948,12 +948,13 @@ return 0;
 ---------------------------------------
 
 ```C++ language
-#include<stdio.h>
-#include<stdlib.h>
-int main () {
-printf("linux\n");
+#include <iostream>
+using namespace std;
+int main()
+{
+cout<<"linux\n";
 exit (0);
-printf("php\n");
+cout<<"php\n";
 return 0;
 }
 ```
