@@ -1163,8 +1163,9 @@ return 0;
 ```
 ----------------------------------------
 
-```C language
-#include <stdio.h>
+```C++ language
+#include<iostream>
+using namespace std;
 int main()
 {
 int i;
@@ -1174,16 +1175,16 @@ if(i==3)
 {
 goto HAI;
 }
-printf("\n %d ",i);
+cout<<"\n "<< i;
 }
-HAI : printf("\n Linux");
+HAI : cout<<"\n Linux";
 }
 ```
 ----------------------------------------
 
 <strong>Solution: </strong>
 
-```C language
+```C++ language
 1
 2
 Linux
