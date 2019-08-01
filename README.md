@@ -1358,19 +1358,19 @@ return 0;
 <hr>
 
 <ul>
-                                <li><b><a target="_blank" href="https://github.com/manjunath5496/Beginner-Java-Exercises/blob/master/pb(11).pdf" style="text-decoration:none;">Thinking in Java </a></b></li>
-                                <li><b><a target="_blank" href="https://github.com/manjunath5496/Beginner-Java-Exercises/blob/master/pb(12).pdf" style="text-decoration:none;">The Elements of Java Style</a></b></li>
-                                <li><b><a target="_blank" href="https://github.com/manjunath5496/Beginner-Java-Exercises/blob/master/pb(13).pdf" style="text-decoration:none;">Beginning Programming with Java For Dummies</a></b></li>
- <li><b><a target="_blank" href="https://github.com/manjunath5496/Beginner-Java-Exercises/blob/master/pb(14).pdf" style="text-decoration:none;">Effective Java </a></b></li>                              
-<li><b><a target="_blank" href="https://github.com/manjunath5496/Beginner-Java-Exercises/blob/master/pb(15).pdf" style="text-decoration:none;">Java: How To Program </a></b></li>
+                                <li><b><a target="_blank" href="https://github.com/manjunath5496/CPlusPlus-Exercises-for-Beginners/blob/master/pb(22).pdf" style="text-decoration:none;">A Tour of C++ </a></b></li>
+                                <li><b><a target="_blank" href="https://github.com/manjunath5496/CPlusPlus-Exercises-for-Beginners/blob/master/pb(23).pdf" style="text-decoration:none;">Effective C++: 55 Specific Ways to Improve Your Programs and Designs</a></b></li>
+                                <li><b><a target="_blank" href="https://github.com/manjunath5496/CPlusPlus-Exercises-for-Beginners/blob/master/pb(24).pdf" style="text-decoration:none;">Accelerated C++: Practical Programming by Example</a></b></li>
+ <li><b><a target="_blank" href="https://github.com/manjunath5496/CPlusPlus-Exercises-for-Beginners/blob/master/pb(25).pdf" style="text-decoration:none;">C++ For Dummies </a></b></li>                              
+<li><b><a target="_blank" href="https://github.com/manjunath5496/CPlusPlus-Exercises-for-Beginners/blob/master/pb(26).pdf" style="text-decoration:none;">C++ FAQs </a></b></li>
                                 
- <li><b><a target="_blank" href="https://github.com/manjunath5496/Beginner-Java-Exercises/blob/master/pb(16).pdf" style="text-decoration:none;">Java For Dummies</a></b></li>
+ <li><b><a target="_blank" href="https://github.com/manjunath5496/CPlusPlus-Exercises-for-Beginners/blob/master/pb(27).pdf" style="text-decoration:none;">C++ Concurrency in Action</a></b></li>
                           
-<li><b><a target="_blank" href="https://github.com/manjunath5496/Beginner-Java-Exercises/blob/master/pb(17).pdf" style="text-decoration:none;">Java Threads </a></b></li>
-                                <li><b><a target="_blank" href="https://github.com/manjunath5496/Beginner-Java-Exercises/blob/master/pb(18).pdf" style="text-decoration:none;">Java Cookbook</a></b></li>
-                                <li><b><a target="_blank" href="https://github.com/manjunath5496/Beginner-Java-Exercises/blob/master/pb(19).pdf" style="text-decoration:none;">Java Generics and Collections</a></b></li>
+<li><b><a target="_blank" href="https://github.com/manjunath5496/CPlusPlus-Exercises-for-Beginners/blob/master/pb(28).pdf" style="text-decoration:none;">Modern C++ Design: Generic Programming and Design Patterns Applied </a></b></li>
+                                <li><b><a target="_blank" href="https://github.com/manjunath5496/CPlusPlus-Exercises-for-Beginners/blob/master/pb(29).pdf" style="text-decoration:none;">Sams Teach Yourself C++ in One Hour a Day</a></b></li>
+                                <li><b><a target="_blank" href="https://github.com/manjunath5496/CPlusPlus-Exercises-for-Beginners/blob/master/pb(30).pdf" style="text-decoration:none;">The C++ Programming Language</a></b></li>
                                 
-<li><b><a target="_blank" href="https://github.com/manjunath5496/Beginner-Java-Exercises/blob/master/pb(20).pdf" style="text-decoration:none;">The Well-Grounded Java Developer</a></b></li>
-<li><b><a target="_blank" href="https://github.com/manjunath5496/Beginner-Java-Exercises/blob/master/pb(21).pdf" style="text-decoration:none;">Think Java: How to Think Like a Computer Scientist</a></b></li>
+<li><b><a target="_blank" href="https://github.com/manjunath5496/CPlusPlus-Exercises-for-Beginners/blob/master/pb(31).pdf" style="text-decoration:none;">Thinking in C++</a></b></li>
+
  </ul>
 	
