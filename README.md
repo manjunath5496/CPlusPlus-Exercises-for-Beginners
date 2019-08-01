@@ -1190,13 +1190,14 @@ Linux
 ```
 ----------------------------------------
 
-```C language
-#include<stdio.h>
+```C++ language
+#include<iostream>
+using namespace std;
 int main()
 {
 int i = 54;
 int y = i<<1;
-printf("The value of y = %d", y);
+cout<<"The value of y = "<< y;
 return 0;
 }
 ```
@@ -1204,18 +1205,19 @@ return 0;
 
 <strong>Solution: </strong>
 
-```C language
+```C++ language
 The value of y = 108
 ```
 ----------------------------------------
 
-```C language
-#include<stdio.h>
+```C++ language
+#include<iostream>
+using namespace std;
 int main()
 {
 int i = 54;
 int y = i>>1;
-printf("The value of y = %d", y);
+cout<<"The value of y = "<< y;
 return 0;
 }
 ```
@@ -1223,7 +1225,7 @@ return 0;
 
 <strong>Solution: </strong>
 
-```C language
+```C++ language
 The value of y = 27
 ```
 ----------------------------------------
