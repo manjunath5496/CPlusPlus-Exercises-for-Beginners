@@ -1330,3 +1330,26 @@ return 0;
 }
 ```
 ----------------------------------------
+
+# Question 42
+
+### **Question:**
+
+> ***Write a program to compute inverse of tan x.***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+#include<math.h>
+using namespace std;
+int main()
+{
+int x = 20;
+cout<<"Inverse of tan x = "<< atan(x);
+return 0;
+}
+```
+----------------------------------------
