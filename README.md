@@ -1372,5 +1372,29 @@ return 0;
                                 
 <li><b><a target="_blank" href="https://github.com/manjunath5496/CPlusPlus-Exercises-for-Beginners/blob/master/pb(31).pdf" style="text-decoration:none;">Thinking in C++</a></b></li>
 
+
+<li><b><a target="_blank" href="https://github.com/manjunath5496/CPlusPlus-Exercises-for-Beginners/blob/master/avc(11).pdf" style="text-decoration:none;">Object Oriented Programming with C++ </a></b></li>
+ <li><b><a target="_blank" href="https://github.com/manjunath5496/CPlusPlus-Exercises-for-Beginners/blob/master/avc(12).pdf" style="text-decoration:none;">Beginning C++ Through Game Programming </a></b></li>
+                                <li><b><a target="_blank" href="https://github.com/manjunath5496/CPlusPlus-Exercises-for-Beginners/blob/master/avc(13).pdf" style="text-decoration:none;">C++ network programming</a></b></li>
+ <li><b><a target="_blank" href="https://github.com/manjunath5496/CPlusPlus-Exercises-for-Beginners/blob/master/avc(14).pdf" style="text-decoration:none;">C++ Programming for the Absolute Beginner </a></b></li>                              
+<li><b><a target="_blank" href="https://github.com/manjunath5496/CPlusPlus-Exercises-for-Beginners/blob/master/avc(15).pdf" style="text-decoration:none;">Hands-On System Programming with C++</a></b></li>
+                                
+ <li><b><a target="_blank" href="https://github.com/manjunath5496/CPlusPlus-Exercises-for-Beginners/blob/master/avc(16).pdf" style="text-decoration:none;">Learn C++ Programming Language: Become A Complete C++ Programmer</a></b></li>
+                          
+<li><b><a target="_blank" href="https://github.com/manjunath5496/CPlusPlus-Exercises-for-Beginners/blob/master/avc(17).pdf" style="text-decoration:none;">Moving From C to C++</a></b></li>
+                                <li><b><a target="_blank" href="https://github.com/manjunath5496/CPlusPlus-Exercises-for-Beginners/blob/master/avc(18).pdf" style="text-decoration:none;">Fundamentals of Programming C++</a></b></li>
+                                <li><b><a target="_blank" href="https://github.com/manjunath5496/CPlusPlus-Exercises-for-Beginners/blob/master/avc(19).pdf" style="text-decoration:none;">Real-Time C++</a></b></li>
+                                
+<li><b><a target="_blank" href="https://github.com/manjunath5496/CPlusPlus-Exercises-for-Beginners/blob/master/avc(20).pdf" style="text-decoration:none;">Schaum's outline of theory and problems of programming with C++</a></b></li> 
+
+
+
+
+
+
+
+
+
+
  </ul>
 	
