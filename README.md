@@ -49,7 +49,7 @@ int main()
 float r, area;
 cout<<"Enter any number:";
 cin>>r;
-area = 4 * 3.14 * r * r;
+area = 3.14 * r * r;
 cout<<"The area of the circle = "<< area;
 return 0;
 }
