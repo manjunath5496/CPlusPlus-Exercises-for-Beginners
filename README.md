@@ -1353,6 +1353,563 @@ return 0;
 }
 ```
 ----------------------------------------
+ 
+ 
+# Question 43
+
+### **Question:**
+
+> ***Write a program to Find All Roots of a Quadratic Equation.***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```c++
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+
+    float a, b, c, x1, x2, discriminant, realPart, imaginaryPart;
+    cout << "Enter coefficients a, b and c: ";
+    cin >> a >> b >> c;
+    discriminant = b*b - 4*a*c;
+    
+    if (discriminant > 0) {
+        x1 = (-b + sqrt(discriminant)) / (2*a);
+        x2 = (-b - sqrt(discriminant)) / (2*a);
+        cout << "Roots are real and different." << endl;
+        cout << "x1 = " << x1 << endl;
+        cout << "x2 = " << x2 << endl;
+    }
+    
+    else if (discriminant == 0) {
+        cout << "Roots are real and same." << endl;
+        x1 = -b/(2*a);
+        cout << "x1 = x2 =" << x1 << endl;
+    }
+
+    else {
+        realPart = -b/(2*a);
+        imaginaryPart =sqrt(-discriminant)/(2*a);
+        cout << "Roots are complex and different."  << endl;
+        cout << "x1 = " << realPart << "+" << imaginaryPart << "i" << endl;
+        cout << "x2 = " << realPart << "-" << imaginaryPart << "i" << endl;
+    }
+
+    return 0;
+}
+```
+----------------------------------------
+
+# Question 44
+
+### **Question:**
+
+> ***Write a program to Display Fibonacci Series.***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```c++
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int n, t1 = 0, t2 = 1, nextTerm = 0;
+
+    cout << "Enter the number of terms: ";
+    cin >> n;
+
+    cout << "Fibonacci Series: ";
+
+    for (int i = 1; i <= n; ++i)
+    {
+        // Prints the first two terms.
+        if(i == 1)
+        {
+            cout << " " << t1;
+            continue;
+        }
+        if(i == 2)
+        {
+            cout << t2 << " ";
+            continue;
+        }
+        nextTerm = t1 + t2;
+        t1 = t2;
+        t2 = nextTerm;
+        
+        cout << nextTerm << " ";
+    }
+    return 0;
+}
+```
+----------------------------------------
+
+# Question 45
+
+### **Question:**
+
+> ***Write a program to Find GCD.***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```c++
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int n1, n2;
+
+    cout << "Enter two numbers: ";
+    cin >> n1 >> n2;
+    
+    while(n1 != n2)
+    {
+        if(n1 > n2)
+            n1 -= n2;
+        else
+            n2 -= n1;
+    }
+
+    cout << "HCF = " << n1;
+    return 0;
+}
+```
+----------------------------------------
+
+# Question 46
+
+### **Question:**
+
+> ***Write a program to Find LCM.***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```c++
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int n1, n2, max;
+
+    cout << "Enter two numbers: ";
+    cin >> n1 >> n2;
+    
+    // maximum value between n1 and n2 is stored in max
+    max = (n1 > n2) ? n1 : n2;
+
+    do
+    {
+        if (max % n1 == 0 && max % n2 == 0)
+        {
+            cout << "LCM = " << max;
+            break;
+        }
+        else
+            ++max;
+    } while (true);
+    
+    return 0;
+}
+```
+----------------------------------------
+
+# Question 47
+
+### **Question:**
+
+> ***Write a program to Display Prime Numbers Between Two Intervals.***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```c++
+#include <iostream>
+using namespace std;
+
+int main() {
+    int low, high, i;
+    bool isPrime = true;
+
+    cout << "Enter two numbers (intervals): ";
+    cin >> low >> high;
+
+    cout << "\nPrime numbers between " << low << " and " << high << " are: " << endl;
+
+    while (low < high) {
+        isPrime = true;
+        if (low == 0 || low == 1) {
+            isPrime = false;
+        }
+        else {
+            for (i = 2; i <= low / 2; ++i) {
+                if (low % i == 0) {
+                    isPrime = false;
+                    break;
+                }
+            }
+        }
+        
+        if (isPrime)
+            cout << low << " ";
+
+        ++low;
+    }
+
+    return 0;
+}
+```
+----------------------------------------
+
+# Question 48
+
+### **Question:**
+
+> ***Write a program to Check Armstrong Number.***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```c++
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num, originalNum, remainder, result = 0;
+    cout << "Enter a three-digit integer: ";
+    cin >> num;
+    originalNum = num;
+
+    while (originalNum != 0) {
+        // remainder contains the last digit
+        remainder = originalNum % 10;
+        
+        result += remainder * remainder * remainder;
+        
+        // removing last digit from the orignal number
+        originalNum /= 10;
+    }
+
+    if (result == num)
+        cout << num << " is an Armstrong number.";
+    else
+        cout << num << " is not an Armstrong number.";
+
+    return 0;
+}
+```
+----------------------------------------
+
+# Question 49
+
+### **Question:**
+
+> ***Write a program to print half pyramid using *.***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```c++
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int rows;
+
+    cout << "Enter number of rows: ";
+    cin >> rows;
+
+    for(int i = 1; i <= rows; ++i)
+    {
+        for(int j = 1; j <= i; ++j)
+        {
+            cout << "* ";
+        }
+        cout << "\n";
+    }
+    return 0;
+}
+```
+----------------------------------------
+
+
+
+# Question 50
+
+### **Question:**
+
+> ***Write a program to print half pyramid using numbers.***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```c++
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int rows;
+
+    cout << "Enter number of rows: ";
+    cin >> rows;
+
+    for(int i = 1; i <= rows; ++i)
+    {
+        for(int j = 1; j <= i; ++j)
+        {
+            cout << j << " ";
+        }
+        cout << "\n";
+    }
+    return 0;
+}
+```
+----------------------------------------
+
+# Question 51
+
+### **Question:**
+
+> ***Write a program to Find Sum of Natural Numbers using Recursion.***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```c++
+#include<iostream>
+using namespace std;
+
+int add(int n);
+
+int main()
+{
+    int n;
+
+    cout << "Enter a positive integer: ";
+    cin >> n;
+
+    cout << "Sum =  " << add(n);
+
+    return 0;
+}
+
+int add(int n)
+{
+    if(n != 0)
+        return n + add(n - 1);
+    return 0;
+}
+```
+----------------------------------------
+
+# Question 52
+
+### **Question:**
+
+> ***Write a program to Access Elements of an Array Using Pointer.***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```c++
+#include <iostream>
+using namespace std;
+
+int main()
+{
+   int data[5];
+   cout << "Enter elements: ";
+
+   for(int i = 0; i < 5; ++i)
+      cin >> data[i];
+
+   cout << "You entered: ";
+   for(int i = 0; i < 5; ++i)
+      cout << endl << *(data + i);
+
+   return 0;
+}
+```
+----------------------------------------
+
+# Question 53
+
+### **Question:**
+
+> ***Write a program to Store Information of a Student in a Structure.***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```c++
+#include <iostream>
+using namespace std;
+
+struct student
+{
+    char name[50];
+    int roll;
+    float marks;
+};
+
+int main() 
+{
+    student s;
+    cout << "Enter information," << endl;
+    cout << "Enter name: ";
+    cin >> s.name;
+    cout << "Enter roll number: ";
+    cin >> s.roll;
+    cout << "Enter marks: ";
+    cin >> s.marks;
+
+    cout << "\nDisplaying Information," << endl;
+    cout << "Name: " << s.name << endl;
+    cout << "Roll: " << s.roll << endl;
+    cout << "Marks: " << s.marks << endl;
+    return 0;
+}
+
+```
+----------------------------------------
+
+# Question 54
+
+### **Question:**
+
+> ***Write a program to Store and Display Information Using Structure.***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```c++
+#include <iostream>
+using namespace std;
+
+struct student
+{
+    char name[50];
+    int roll;
+    float marks;
+} s[10];
+
+int main()
+{
+    cout << "Enter information of students: " << endl;
+
+    // storing information
+    for(int i = 0; i < 10; ++i)
+    {
+        s[i].roll = i+1;
+        cout << "For roll number" << s[i].roll << "," << endl;
+
+        cout << "Enter name: ";
+        cin >> s[i].name;
+
+        cout << "Enter marks: ";
+        cin >> s[i].marks;
+
+        cout << endl;
+    }
+
+    cout << "Displaying Information: " << endl;
+
+    // Displaying information
+    for(int i = 0; i < 10; ++i)
+    {
+        cout << "\nRoll number: " << i+1 << endl;
+        cout << "Name: " << s[i].name << endl;
+        cout << "Marks: " << s[i].marks << endl;
+    }
+
+    return 0;
+}
+```
+----------------------------------------
+
+# Question 55
+
+### **Question:**
+
+> ***Write a program to Add Complex Numbers by Passing Structure to a Function.***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```c++
+#include <iostream>
+using namespace std;
+
+typedef struct complex {
+    float real;
+    float imag;
+} complexNumber;
+
+complexNumber addComplexNumbers(complex, complex);
+
+int main() {
+    complexNumber num1, num2, complexSum;
+    char signOfImag;
+
+    cout << "For 1st complex number," << endl;
+    cout << "Enter real and imaginary parts respectively:" << endl;
+    cin >> num1.real >> num1.imag;
+
+    cout << endl
+         << "For 2nd complex number," << endl;
+    cout << "Enter real and imaginary parts respectively:" << endl;
+    cin >> num2.real >> num2.imag;
+
+    // Call add function and store result in complexSum
+    complexSum = addComplexNumbers(num1, num2);
+
+    // Use Ternary Operator to check the sign of the imaginary number
+    signOfImag = (complexSum.imag > 0) ? '+' : '-';
+
+    // Use Ternary Operator to adjust the sign of the imaginary number
+    complexSum.imag = (complexSum.imag > 0) ? complexSum.imag : -complexSum.imag;
+
+    cout << "Sum = " << complexSum.real << signOfImag << complexSum.imag << "i";
+
+    return 0;
+}
+
+complexNumber addComplexNumbers(complex num1, complex num2) {
+    complex temp;
+    temp.real = num1.real + num2.real;
+    temp.imag = num1.imag + num2.imag;
+    return (temp);
+}
+```
+----------------------------------------
+
+ 
+ 
+ 
+ 
  </br>
 <h3>Books:</h3>
 <hr>
