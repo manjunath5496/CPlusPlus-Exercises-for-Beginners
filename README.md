@@ -1911,6 +1911,91 @@ complexNumber addComplexNumbers(complex num1, complex num2) {
  
  
  </br>
+ 
+ <h2> Papers  </h2>
+
+<ul>
+
+ <li><a target="_blank" href="https://github.com/manjunath5496/CPlusPlus-Exercises-for-Beginners/blob/master/8cp(1).pdf" style="text-decoration:none;">Programming
+Abstractions in C++</a></li>
+
+
+ <li><a target="_blank" href="https://github.com/manjunath5496/CPlusPlus-Exercises-for-Beginners/blob/master/8cp(2).pdf" style="text-decoration:none;">Introduction to C++ (and C) Programming</a></li>
+
+<li><a target="_blank" href="https://github.com/manjunath5496/CPlusPlus-Exercises-for-Beginners/blob/master/8cp(3).pdf" style="text-decoration:none;">Programming Languages — C++</a></li>
+ <li><a target="_blank" href="https://github.com/manjunath5496/CPlusPlus-Exercises-for-Beginners/blob/master/8cp(4).pdf" style="text-decoration:none;">Parallel Scientific Computing in C++ and MPI</a></li>                              
+<li><a target="_blank" href="https://github.com/manjunath5496/CPlusPlus-Exercises-for-Beginners/blob/master/8cp(5).pdf" style="text-decoration:none;">Programming in C++: Introduction to the language standard C++14 (and a preview of C++17)</a></li>
+<li><a target="_blank" href="https://github.com/manjunath5496/CPlusPlus-Exercises-for-Beginners/blob/master/8cp(6).pdf" style="text-decoration:none;">OOP with C++</a></li>
+ <li><a target="_blank" href="https://github.com/manjunath5496/CPlusPlus-Exercises-for-Beginners/blob/master/8cp(7).pdf" style="text-decoration:none;">Assessing Programming Language Impact on Development and Maintenance: A Study on C and C++</a></li>
+
+ <li><a target="_blank" href="https://github.com/manjunath5496/CPlusPlus-Exercises-for-Beginners/blob/master/8cp(8).pdf" style="text-decoration:none;"> The C++ programming language in cheminformatics and computational chemistry</a></li>
+   <li><a target="_blank" href="https://github.com/manjunath5496/CPlusPlus-Exercises-for-Beginners/blob/master/8cp(9).pdf" style="text-decoration:none;">
+Technical Report on C++ Performance </a></li>
+  
+   
+ <li><a target="_blank" href="https://github.com/manjunath5496/CPlusPlus-Exercises-for-Beginners/blob/master/8cp(10).pdf" style="text-decoration:none;">An Image Processing Library in Modern C++: Getting Simplicity and Efficiency with Generic Programming</a></li>                              
+<li><a target="_blank" href="https://github.com/manjunath5496/CPlusPlus-Exercises-for-Beginners/blob/master/8cp(11).pdf" style="text-decoration:none;">C++ lecture notes</a></li>
+<li><a target="_blank" href="https://github.com/manjunath5496/CPlusPlus-Exercises-for-Beginners/blob/master/8cp(12).pdf" style="text-decoration:none;">A profound reflection on C++ template mechanism</a></li>
+<li><a target="_blank" href="https://github.com/manjunath5496/CPlusPlus-Exercises-for-Beginners/blob/master/8cp(13).pdf" style="text-decoration:none;">Summary of C++ Data Structures</a></li>
+
+<li><a target="_blank" href="https://github.com/manjunath5496/CPlusPlus-Exercises-for-Beginners/blob/master/8cp(14).pdf" style="text-decoration:none;">Low-Cost Deterministic C++ Exceptions for Embedded Systems</a></li>
+                              
+<li><a target="_blank" href="https://github.com/manjunath5496/CPlusPlus-Exercises-for-Beginners/blob/master/8cp(15).pdf" style="text-decoration:none;">
+Reversing C++ </a></li>
+
+<li><a target="_blank" href="https://github.com/manjunath5496/CPlusPlus-Exercises-for-Beginners/blob/master/8cp(16).pdf" style="text-decoration:none;">Introduction to C++ Programming I</a></li>
+
+  <li><a target="_blank" href="https://github.com/manjunath5496/CPlusPlus-Exercises-for-Beginners/blob/master/8cp(17).pdf" style="text-decoration:none;">
+A C++ Language Workbench</a></li>   
+  
+<li><a target="_blank" href="https://github.com/manjunath5496/CPlusPlus-Exercises-for-Beginners/blob/master/8cp(18).pdf" style="text-decoration:none;">Advanced Programming with C++</a></li> 
+
+  
+<li><a target="_blank" href="https://github.com/manjunath5496/CPlusPlus-Exercises-for-Beginners/blob/master/8cp(19).pdf" style="text-decoration:none;">The Game in C++</a></li> 
+
+<li><a target="_blank" href="https://github.com/manjunath5496/CPlusPlus-Exercises-for-Beginners/blob/master/8cp(20).pdf" style="text-decoration:none;"> The moderating effect of logic in the learning of C++ computer programming using screen casting</a></li>
+
+<li><a target="_blank" href="https://github.com/manjunath5496/CPlusPlus-Exercises-for-Beginners/blob/master/8cp(21).pdf" style="text-decoration:none;">
+The Large Integer Case Study in C++ </a></li>
+<li><a target="_blank" href="https://github.com/manjunath5496/CPlusPlus-Exercises-for-Beginners/blob/master/8cp(22).pdf" style="text-decoration:none;">Introducing Project-based Team Research into a C++ Programming Course</a></li> 
+ <li><a target="_blank" href="https://github.com/manjunath5496/CPlusPlus-Exercises-for-Beginners/blob/master/8cp(23).pdf" style="text-decoration:none;"> Fast Static Analysis of C++ Virtual Function Calls</a></li> 
+ 
+
+   <li><a target="_blank" href="https://github.com/manjunath5496/CPlusPlus-Exercises-for-Beginners/blob/master/8cp(24).pdf" style="text-decoration:none;">SAFEDISPATCH: Securing C++ Virtual Calls from Memory Corruption Attacks</a></li>
+ 
+   <li><a target="_blank" href="https://github.com/manjunath5496/CPlusPlus-Exercises-for-Beginners/blob/master/8cp(25).pdf" style="text-decoration:none;">Object Model Construction for Inheritance in C++ and its Applications to Program Analysis</a></li>                              
+ <li><a target="_blank" href="https://github.com/manjunath5496/CPlusPlus-Exercises-for-Beginners/blob/master/8cp(26).pdf" style="text-decoration:none;">Inheritance and its type in Object Oriented Programming using C++</a></li>
+ <li><a target="_blank" href="https://github.com/manjunath5496/CPlusPlus-Exercises-for-Beginners/blob/master/8cp(27).pdf" style="text-decoration:none;">Understanding Integer Overflow in C/C++</a></li>
+   
+ 
+   <li><a target="_blank" href="https://github.com/manjunath5496/CPlusPlus-Exercises-for-Beginners/blob/master/8cp(28).pdf" style="text-decoration:none;">Comparative study of C, Objective C, C++ programming language</a></li>
+ 
+   <li><a target="_blank" href="https://github.com/manjunath5496/CPlusPlus-Exercises-for-Beginners/blob/master/8cp(29).pdf" style="text-decoration:none;">A history of C++</a></li>                              
+
+  <li><a target="_blank" href="https://github.com/manjunath5496/CPlusPlus-Exercises-for-Beginners/blob/master/8cp(30).pdf" style="text-decoration:none;">
+A Quick Introduction to C++</a></li>
+ 
+   <li><a target="_blank" href="https://github.com/manjunath5496/CPlusPlus-Exercises-for-Beginners/blob/master/8cp(31).pdf" style="text-decoration:none;">Function Overloading Implementation in C++</a></li> 
+    <li><a target="_blank" href="https://github.com/manjunath5496/CPlusPlus-Exercises-for-Beginners/blob/master/8cp(32).pdf" style="text-decoration:none;">Quantifying Behavioral Differences Between C and C++ Programs</a></li> 
+
+   <li><a target="_blank" href="https://github.com/manjunath5496/CPlusPlus-Exercises-for-Beginners/blob/master/8cp(33).pdf" style="text-decoration:none;">Using C++ Lambdas</a></li>                              
+
+  <li><a target="_blank" href="https://github.com/manjunath5496/CPlusPlus-Exercises-for-Beginners/blob/master/8cp(34).pdf" style="text-decoration:none;">C/C++ Thread Safety Analysis</a></li> 
+ 
+  <li><a target="_blank" href="https://github.com/manjunath5496/CPlusPlus-Exercises-for-Beginners/blob/master/8cp(35).pdf" style="text-decoration:none;">Abstraction and the C++ machine model</a></li> 
+
+  <li><a target="_blank" href="https://github.com/manjunath5496/CPlusPlus-Exercises-for-Beginners/blob/master/8cp(36).pdf" style="text-decoration:none;">An Overview of the C++ Programming Language</a></li> 
+ 
+<li><a target="_blank" href="https://github.com/manjunath5496/CPlusPlus-Exercises-for-Beginners/blob/master/8cp(37).pdf" style="text-decoration:none;">Why C++ is not just an Object Oriented Programming Language</a></li>
+ <li><a target="_blank" href="https://github.com/manjunath5496/CPlusPlus-Exercises-for-Beginners/blob/master/8cp(38).pdf" style="text-decoration:none;">Learning Standard C++ as a New Language</a></li>
+ <li><a target="_blank" href="https://github.com/manjunath5496/CPlusPlus-Exercises-for-Beginners/blob/master/8cp(39).pdf" style="text-decoration:none;">Loop Recognition in C++/Java/Go/Scala</a></li>
+
+</ul>
+ 
+ </br>
+ 
+ 
+ 
 <h3>Books:</h3>
 <hr>
 
