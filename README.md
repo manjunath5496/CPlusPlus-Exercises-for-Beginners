@@ -1989,7 +1989,7 @@ A Quick Introduction to C++</a></li>
 <li><a target="_blank" href="https://github.com/manjunath5496/CPlusPlus-Exercises-for-Beginners/blob/master/8cp(37).pdf" style="text-decoration:none;">Why C++ is not just an Object Oriented Programming Language</a></li>
  <li><a target="_blank" href="https://github.com/manjunath5496/CPlusPlus-Exercises-for-Beginners/blob/master/8cp(38).pdf" style="text-decoration:none;">Learning Standard C++ as a New Language</a></li>
  <li><a target="_blank" href="https://github.com/manjunath5496/CPlusPlus-Exercises-for-Beginners/blob/master/8cp(39).pdf" style="text-decoration:none;">Loop Recognition in C++/Java/Go/Scala</a></li>
-
+<li><a target="_blank" href="https://github.com/manjunath5496/CPlusPlus-Exercises-for-Beginners/blob/master/8cp(40).pdf" style="text-decoration:none;">C++ Programming</a></li>
 </ul>
  
  </br>
