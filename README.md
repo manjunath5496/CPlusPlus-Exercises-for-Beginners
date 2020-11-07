@@ -1993,9 +1993,24 @@ A Quick Introduction to C++</a></li>
 </ul>
  
  </br>
+ <h2> Source Codes </h2>
+ <ul>
+ <li><a target="_blank" href="https://github.com/manjunath5496/CPlusPlus-Exercises-for-Beginners/blob/master/Airline Reservation System.rar" style="text-decoration:none;">Airline Reservation System</a></li>
+ <li><a target="_blank" href="https://github.com/manjunath5496/CPlusPlus-Exercises-for-Beginners/blob/master/Battle Ship Game.rar" style="text-decoration:none;">Battle Ship Game</a></li>
+ <li><a target="_blank" href="https://github.com/manjunath5496/CPlusPlus-Exercises-for-Beginners/blob/master/Daily Diary Management System.rar" style="text-decoration:none;">Daily Diary Management System</a></li>
+
+ <li><a target="_blank" href="https://github.com/manjunath5496/CPlusPlus-Exercises-for-Beginners/blob/master/Employee Database System.rar" style="text-decoration:none;"> Employee Database System</a></li>
+ <li><a target="_blank" href="https://github.com/manjunath5496/CPlusPlus-Exercises-for-Beginners/blob/master/Employee Management System.rar" style="text-decoration:none;"> Employee Management System</a></li>
+ <li><a target="_blank" href="https://github.com/manjunath5496/CPlusPlus-Exercises-for-Beginners/blob/master/Hospital Appointment System.rar" style="text-decoration:none;">Hospital Appointment System</a></li>
  
+ <li><a target="_blank" href="https://github.com/manjunath5496/CPlusPlus-Exercises-for-Beginners/blob/master/Movie Ticket Booking System.rar" style="text-decoration:none;"> Movie Ticket Booking System</a></li>
+ <li><a target="_blank" href="https://github.com/manjunath5496/CPlusPlus-Exercises-for-Beginners/blob/master/Report Card Management System.rar" style="text-decoration:none;"> Report Card Management System</a></li>
+ <li><a target="_blank" href="https://github.com/manjunath5496/CPlusPlus-Exercises-for-Beginners/blob/master/Simple Role Playing Game.rar" style="text-decoration:none;">Simple Role Playing Game</a></li>
+  <li><a target="_blank" href="https://github.com/manjunath5496/CPlusPlus-Exercises-for-Beginners/blob/master/Student Detail Management  System.rar" style="text-decoration:none;">Student Detail Management  System</a></li>
  
- 
+
+</ul>
+ </br>
 <h3>Books:</h3>
 <hr>
 
