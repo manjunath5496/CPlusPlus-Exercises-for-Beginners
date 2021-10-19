@@ -1618,7 +1618,7 @@ int main() {
 
 ### **Question:**
 
-> ***Write a program to print half pyramid using *.***
+> ***Write a program to print half pyramid using &#x2A;.***
 
 ---------------------------------------
 
