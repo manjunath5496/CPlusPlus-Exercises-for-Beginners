@@ -2,7 +2,7 @@
 
 ### **Question:**
 
-> ***Write a program to print Hello World!.***
+> ***Write a program to print Hello, World!.***
 
 ---------------------------------------
 
@@ -10,32 +10,20 @@
 
 ```C++ language
 #include<iostream>
-int main()
-{
-std::cout<<"Hello World!";
+int main() {
+std::cout<<"Hello, World!";
 return 0;
 }
+
 ```
 ----------------------------------------
 
-<strong>Solution: </strong>
-
-```C++ language
-#include<iostream>
-using namespace std;
-int main()
-{
-cout<<"Hello World!";
-return 0;
-}
-```
-----------------------------------------
 
 # Question 2
 
 ### **Question:**
 
-> ***Write a program to find the area of a circle.***
+> ***Write a program to compute the perimeter and area of a rectangle.***
 
 ---------------------------------------
 
@@ -44,19 +32,209 @@ return 0;
 ```C++ language
 #include<iostream>
 using namespace std;
-int main()
-{
-float r, area;
-cout<<"Enter any number:";
-cin>>r;
-area = 3.14 * r * r;
-cout<<"The area of the circle = "<< area;
+int main() {
+int height = 8;
+int width = 5;
+int perimeter = 2*(height + width);
+cout<<"Perimeter of the rectangle is: " << perimeter << " cm\n";
+int area = height * width;
+cout<<"Area of the rectangle is: "<< area << " square cm\n";
 return 0;
 }
 ```
 ----------------------------------------
 
+
 # Question 3
+
+### **Question:**
+
+> ***Write a program to compute the perimeter and area of a circle.***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+using namespace std;
+int main() {
+int radius = 4;
+float perimeter = 2*3.14*radius;
+cout<<"Perimeter of the circle is: " << perimeter << " cm\n";
+float area = 3.14*radius*radius;
+cout<<"Area of the circle is: "<< area << " square cm\n";
+return 0;
+}
+
+```
+----------------------------------------
+
+
+# Question 4
+
+### **Question:**
+
+> ***Write a program that accepts two numbers from the user and calculate the sum of the two numbers.***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+
+#include<iostream>
+using namespace std;
+int main() {
+float a, b, sum;
+cout<<"\nEnter the first number: "; 
+cin>>a;
+cout<<"\nEnter the second number: ";
+cin>>b;
+sum = a+ b;
+cout<<"\nSum of the above two numbers is: "<< sum;
+return 0;
+}
+
+
+```
+----------------------------------------
+
+
+# Question 5
+
+### **Question:**
+
+> ***Write a program that accepts two numbers from the user and calculate the product of the two numbers.***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+using namespace std;
+int main() {
+int a, b, mult;
+cout<<"\nEnter the first number: "; 
+cin>>a;
+cout<<"\nEnter the second number: ";
+cin>>b;
+mult = a * b;
+cout<<"\nProduct of the above two numbers is: " << mult;
+return 0;
+}
+
+```
+----------------------------------------
+
+
+# Question 6
+
+### **Question:**
+
+> ***Write a program that accepts three numbers and find the largest of three.***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+using namespace std;
+int main() {
+int x, y, z;
+cout<<"\nEnter the first number: "; 
+cin>>x;
+cout<<"\nEnter the second number: ";
+cin>>y;
+cout<<"\nEnter the third number: ";
+cin>>z;
+
+// if x is greater than both y and z, x is the largest
+if (x >= y && x >= z)
+cout<<x<<" is the largest number.";
+
+// if y is greater than both x and z, y is the largest
+if (y >= x && y >= z)
+cout<<y<<" is the largest number.";
+
+// if z is greater than both x and y, z is the largest
+if (z >= x && z >= y)
+cout<<z<<" is the largest number.";
+    
+return 0;
+}
+```
+----------------------------------------
+
+# Question 7
+
+### **Question:**
+
+> ***Write a program that reads three floating values and check if it is possible to make a triangle with them. Also calculate the perimeter of the triangle if the entered values are valid.***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+using namespace std;
+int main() {
+float x, y, z;
+cout<<"\nEnter the first number: "; 
+cin>>x;
+cout<<"\nEnter the second number: ";
+cin>>y;
+cout<<"\nEnter the third number: ";
+cin>>z;
+
+if(x < (y+z) && y < (x+z) && z < (y+x)) {  
+cout<<"\nPerimeter of the triangle is: " << x+y+z;	 
+}
+else {
+cout<<"\nIt is impossible to form a triangle.";
+}
+
+return 0;
+}
+```
+----------------------------------------
+
+# Question 8
+
+### **Question:**
+
+> ***Write a program that reads an integer between 1 and 7 and print the day of the week in English.***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+using namespace std;
+int main() {
+int day;
+cout<<"\nEnter a number between 1 to 7 to get the day name: ";
+cin>>day;
+switch(day) {
+case 1 : cout<<"Monday\n"; break;
+case 2 : cout<<"Tuesday\n"; break;
+case 3 : cout<<"Wednesday\n"; break;
+case 4 : cout<<"Thursday\n"; break;
+case 5 : cout<<"Friday\n"; break;
+case 6 : cout<<"Saturday\n"; break;
+case 7 : cout<<"Sunday\n"; break;
+default : cout<<"Enter a number between 1 to 7.";
+}
+return 0;
+}
+```
+----------------------------------------
+
+# Question 9
 
 ### **Question:**
 
@@ -69,20 +247,18 @@ return 0;
 ```C++ language
 #include<iostream>
 using namespace std;
-int main()
-{
-float a, b, sum;
-cout<<"Enter any two numbers:";
-cin>>a;
-cin>>b;
-sum = a+ b;
-cout<<"The sum of a and b = "<< sum;
+int main() {
+int a, b, sum;
+a=1;
+b=2;
+sum = a + b;
+cout<<"The sum of a and b is: " << sum;
 return 0;
 }
 ```
 ----------------------------------------
 
-# Question 4
+# Question 10
 
 ### **Question:**
 
@@ -94,19 +270,19 @@ return 0;
 
 ```C++ language
 #include<iostream>
+#include<cmath>
 using namespace std;
-int main()
-{
+int main() {
 int a, b;
 a=2;
-b = a * a;
-cout<<"The square of a = "<< b;
+b = pow((a), 2);
+cout<<"The square of a is: "<< b;
 return 0;
 }
 ```
 ----------------------------------------
 
-# Question 5
+# Question 11
 
 ### **Question:**
 
@@ -119,17 +295,14 @@ return 0;
 ```C++ language
 #include<iostream>
 using namespace std;
-int main()
-{
+int main() {
 int a, b;
 a = 2;
 b = 3;
-if(a>b)
-{
+if(a>b) {
 cout<<"a is greater than b";
 }
-else
-{
+else {
 cout<<"b is greater than a";
 }
 return 0;
@@ -137,7 +310,7 @@ return 0;
 ```
 ----------------------------------------
 
-# Question 6
+# Question 12
 
 ### **Question:**
 
@@ -150,25 +323,25 @@ return 0;
 ```C++ language
 #include<iostream>
 using namespace std;
-int main()
-{
+int main() {
 int i, avg, sum = 0;
 int num [5] = {16, 18, 20, 25, 36};
-for(i=0; i<5; i++)
+for(i=0; i<5; i++) {
 sum = sum + num [i];
 avg = sum/5;
-cout<<"Sum of the Elements in the array = "<< sum <<endl;
-cout<<"Average of the elements in the array= "<< avg<<endl;
+}
+cout<<"\nSum of the Elements in the array is: "<< sum;
+cout<<"\nAverage of the elements in the array is: " << avg;
 return 0;
 }
 ```
 ----------------------------------------
 
-# Question 7
+# Question 13
 
 ### **Question:**
 
-> ***Write a program such that a Switch (case) allows to make a decision from the number of choices, i.e., from the number of cases.***
+> ***Write a program that prints all even numbers between 1 and 25.***
 
 ---------------------------------------
 
@@ -177,96 +350,46 @@ return 0;
 ```C++ language
 #include<iostream>
 using namespace std;
-int main()
-{
-char ch;
-cout<<"Enter any character:";
-cin>>ch;
-switch(ch)
-{
-case 'R':
-cout<<"Red";
-break;
-case 'W':
-cout<<"White";
-break;
-case 'Y':
-cout<<"Yellow";
-break;
-case 'G':
-cout<<"Green";
-break;
-default:
-cout<<"Error";
-break;
+int main() {
+cout<<"Even numbers between 1 to 25:\n";
+for(int i = 1; i <= 25; i++) {
+if(i%2 == 0) {
+cout<< i << endl;
+}
 }
 return 0;
 }
 ```
 ----------------------------------------
 
-# Question 8
+
+# Question 14
 
 ### **Question:**
 
-> ***Write a program to find the greatest of two numbers using pointers.***
+> ***Write a program that prints all odd numbers between 1 and 50.***
 
 ---------------------------------------
 
 <strong>Solution: </strong>
 
 ```C++ language
-#include<iostream>
+#include <iostream>
 using namespace std;
-int main()
-{
-int x, y, *p, *q;
-cout<<"Enter any integer:";
-cin>> x;
-cout<<"Enter any integer:";
-cin>> y;
-p = &x;
-q = &y;
-if(*p>*q)
-{
-cout<<"x is greater than y";
+int main() {
+cout<<"Odd numbers between 1 to 50:\n";
+for(int i = 1; i <= 50; i++) {
+if(i%2 != 0) {
+cout<<i<<endl;
 }
-else
-{
-cout<<"y is greater than x";
 }
 return 0;
 }
 ```
 ----------------------------------------
 
-# Question 9
 
-### **Question:**
-
-> ***Write a program to print the address of x and the value assigned to x.***
-
----------------------------------------
-
-<strong>Solution: </strong>
-
-```C++ language
-#include<iostream>
-using namespace std;
-int main()
-{
-int x, *p;
-cout<<"Enter any integer:";
-cin>>x;
-p = &x;
-cout<<"The address of the variable x = "<< p<<endl;
-cout<<"The value of the variable x = "<< *p<<endl;
-return 0;
-}
-```
-----------------------------------------
-
-# Question 10
+# Question 15
 
 ### **Question:**
 
@@ -279,17 +402,16 @@ return 0;
 ```C++ language
 #include<iostream>
 using namespace std;
-int main()
-{
-int i;
-for( i=1; i<=10; i++)
-cout<<"number = "<< i <<" its square = "<< i*i <<" its cube = "<< i*i*i<< endl;
-return 0;
+int main() {
+for(int i=1; i<=10; i++) {
+cout<<"Number = " << i << " its square = " << i*i << " its cube = " << i*i*i <<endl;
 }
+return 0;
+}  
 ```
 ----------------------------------------
 
-# Question 11
+# Question 16
 
 ### **Question:**
 
@@ -304,22 +426,21 @@ Output must be: ch = M.***
 ```C++ language
 #include<iostream>
 using namespace std;
-int main()
-{
+int main() {
 char M;
-cout<<"Enter any character:";
+cout<<"Enter any character: ";
 cin>>M;
-cout<<"ch= "<< M;
+cout<<"ch = "<< M;
 return 0;
-}
+} 
 ```
 ----------------------------------------
 
-# Question 12
+# Question 17
 
 ### **Question:**
 
-> ***Write a program to print the multiplication table of a number.***
+> ***Write a program to print the multiplication table of a number entered by the user.***
 
 ---------------------------------------
 
@@ -328,10 +449,9 @@ return 0;
 ```C++ language
 #include<iostream>
 using namespace std;
-int main()
-{
+int main() {
 int n, i;
-cout<<"Enter any number:";
+cout<<"Enter any number: ";
 cin>>n;
 for( i=1; i<=5; i++)
 cout<< n <<" * "<< i <<" = "<< n*i <<endl;
@@ -341,7 +461,7 @@ return 0;
 ----------------------------------------
 
 
-# Question 13
+# Question 18
 
 ### **Question:**
 
@@ -354,18 +474,18 @@ return 0;
 ```C++ language
 #include<iostream>
 using namespace std;
-int main()
-{
+int main() {
 int i, product = 1;
-for( i=1; i<=10; i++)
+for(i=1; i<=10; i++) {
 product = product * i;
-cout<<"The product of the first 10 digits = " << product;
+}
+cout<<"The product of the first 10 digits is: " << product;
 return 0;
 }
 ```
 ----------------------------------------
 
-# Question 14
+# Question 19
 
 ### **Question:**
 
@@ -378,28 +498,25 @@ return 0;
 ```C++ language
 #include<iostream>
 using namespace std;
-int main()
-{
+int main() {
 int a;
 a = -35;
-if(a>0)
-{
+if(a>0) {
 cout<<"Number is positive";
 }
-else
-{
-cout<<"Number entered is negative";
+else {
+cout<<"Number is negative";
 }
 return 0;
 }
 ```
 ----------------------------------------
 
-# Question 15
+# Question 20
 
 ### **Question:**
 
-> ***Write a program to check the equivalence of two numbers.***
+> ***Write a program to check the equivalence of two numbers entered by the user.***
 
 ---------------------------------------
 
@@ -408,19 +525,16 @@ return 0;
 ```C++ language
 #include<iostream>
 using namespace std;
-int main()
-{
+int main() {
 int x, y;
-cout<<"Enter any number:";
+cout<<"Enter the first number: ";
 cin>>x;
-cout<<"Enter any number:";
+cout<<"Enter the second number: ";
 cin>>y;
-if(x-y==0)
-{
+if(x-y==0) {
 cout<<"The two numbers are equivalent";
 }
-else
-{
+else {
 cout<<"The two numbers are not equivalent";
 }
 return 0;
@@ -428,11 +542,11 @@ return 0;
 ```
 ----------------------------------------
 
-# Question 16
+# Question 21
 
 ### **Question:**
 
-> ***Write a program to print the remainder of two numbers.***
+> ***Write a program to print the remainder of two numbers entered by the user.***
 
 ---------------------------------------
 
@@ -441,52 +555,20 @@ return 0;
 ```C++ language
 #include<iostream>
 using namespace std;
-int main()
-{
+int main() {
 int a, b, c;
-cout<<"Enter any number:";
+cout<<"Enter the first number: ";
 cin>>a;
-cout<<"Enter any number:";
+cout<<"Enter the second number: ";
 cin>>b;
 c = a % b;
-cout<<"The remainder of a and b = "<< c;
+cout<<"The remainder of " << a << " and " << b << " = " << c;
 return 0;
 }
 ```
 ----------------------------------------
 
-# Question 17
-
-### **Question:**
-
-> ***Write a program to print the given number is even or odd.***
-
----------------------------------------
-
-<strong>Solution: </strong>
-
-```C++ language
-#include<iostream>
-using namespace std;
-int main()
-{
-int a;
-cout<<"Enter any number:";
-cin>>a;
-if(a%2 = = 0)
-{
-cout<<"The number is even";
-}
-else
-{
-cout<<"The number is odd";
-}
-return 0;
-}
-```
-----------------------------------------
-
-# Question 18
+# Question 22
 
 ### **Question:**
 
@@ -499,144 +581,16 @@ return 0;
 ```C++ language
 #include<iostream>
 using namespace std;
-int main()
-{
-char a = 'A';
-while (a<='Z')
-{
-cout<<" \n"<< a++;
+int main() {
+char i;
+for(i='A'; i<='Z'; i++) {
+cout << i << endl;
 }
 return 0;
 }
 ```
 ----------------------------------------
 
-# Question 19
-
-### **Question:**
-
-> ***Write a program to find the incremented and decremented values of two numbers.***
-
----------------------------------------
-
-<strong>Solution: </strong>
-
-```C++ language
-#include<iostream>
-using namespace std;
-int main()
-{
-int a, b, c, d, e, f;
-a = 10;
-b=12;
-c=a+1;
-d=b+1;
-e=a-1;
-f=b-1;
-cout<<"The incremented value of a = "<< c << endl;
-cout<<"The incremented value of b = "<< d << endl;
-cout<<"The decremented value of a = "<< e << endl;
-cout<<"The decremented value of b = "<< f << endl;
-return 0;
-}
-```
-----------------------------------------
-
-# Question 20
-
-### **Question:**
-
-> ***Write a program to calculate the simple interest.***
-
----------------------------------------
-
-<strong>Solution: </strong>
-
-```C++ language
-#include<iostream>
-using namespace std;
-int main()
-{
-int P,T, R, SI;
-cout<<"Enter principal amount:";
-cin>>P;
-cout<<"Enter time:";
-cin>>T;
-cout<<"Enter rate of interest:";
-cin>>R;
-SI = P*T*R/100;
-cout<<"the simple interest = "<<SI;
-return 0;
-}
-```
-----------------------------------------
-
-# Question 21
-
-### **Question:**
-
-> ***Write a program to Find the largest of three numbers.***
-
----------------------------------------
-
-<strong>Solution: </strong>
-
-```C++ language
-#include<iostream>
-using namespace std;
-int main()
-{
-int a, b, c;
-cout<<"Enter any number:";
-cin>>a;
-cout<<"Enter any number:";
-cin>>b;
-cout<<"Enter any number:";
-cin>>c;
-if(a>b&&a>c)
-{
-cout<< a<<" is greater than "<< b<<" and "<<c;
-}
-else if (b>a&&b>c)
-{
-cout<< b<<" is greater than "<< a <<" and "<<c;
-}
-else
-{
-cout<< c<<" is greater than "<< b<<" and "<< a;
-}
-return 0;
-}
-```
-----------------------------------------
-
-# Question 22
-
-### **Question:**
-
-> ***Write a program to print the factorial of the entered number.***
-
----------------------------------------
-
-<strong>Solution: </strong>
-
-```C++ language
-#include<iostream>
-using namespace std;
-int main()
-{
-int i, n, fact=1 ;
-cout<<"Enter any number:";
-cin>>n;
-for(i=1; i<=n; i++)
-fact = fact *i;
-cout<<"\n Entered number is: "<< n;
-cout<<"\n The factorial of the entered number "<< n <<" is: "<< fact;
-return 0;
-}
-
-```
-----------------------------------------
 
 # Question 23
 
@@ -648,41 +602,41 @@ return 0;
 
 <strong>Solution: </strong>
 
-```C language
+```C++ language
 #include<iostream>
 #include<string.h>
 using namespace std;
-int main()
-{
-char ch[4];
-cout<<"Enter any word: ";
-cin>>ch;
-cout<<"The length of the string = "<< strlen(ch);
+int main() {
+char str[1000];
+cout<<"Enter a string to calculate its length: ";
+cin>>str;
+cout<<"The length of the entered string is: "<< strlen(str);
 return 0;
 }
 ```
 ----------------------------------------
 
+
 # Question 24
 
 ### **Question:**
 
-> ***Write a program to print the ASCII value of the entered character.***
+> ***Write a program to check whether the given character is a lower case letter or not.***
 
 ---------------------------------------
 
 <strong>Solution: </strong>
 
 ```C++ language
-#include <iostream>
+#include<iostream>
 using namespace std;
-int main()
-{
- char c;
- cout << "Enter a character: ";
- cin >> c;
- cout << "ASCII Value of " << c << " is " << int(c);
- return 0;
+int main() {
+char ch = 'a';
+if(islower(ch))
+cout<<"The given character is a lower case letter";
+else
+cout<<"The given character is a upper case letter";
+return 0;
 }
 ```
 ----------------------------------------
@@ -692,7 +646,7 @@ int main()
 
 ### **Question:**
 
-> ***Write a program to check whether the entered character is a lower case letter or not.***
+> ***Write a program to check whether the given character is a upper case letter or not.***
 
 ---------------------------------------
 
@@ -701,45 +655,20 @@ int main()
 ```C++ language
 #include<iostream>
 using namespace std;
-int main()
-{
-char ch = 'a';
-if(islower(ch))
-cout<<"you have entered the lower case letter";
+int main() {
+char ch = 'A';
+if(isupper(ch))
+cout<<"The given character is a upper case letter";
 else
-cout<<"you have entered the upper case letter";
+cout<<"The given character is a lower case letter";
 return 0;
 }
+
 ```
 ----------------------------------------
 
 
 # Question 26
-
-### **Question:**
-
-> ***Write a program to check whether the entered character is a upper case letter or not.***
-
----------------------------------------
-
-<strong>Solution: </strong>
-
-```C++ language
-#include<iostream>
-using namespace std;
-int main()
-{
-char ch = 'a';
-if(isupper(ch))
-cout<<"you have entered the upper case letter";
-else
-cout<<"you have entered the lower case letter";
-return 0;
-}
-```
-----------------------------------------
-
-# Question 27
 
 ### **Question:**
 
@@ -752,15 +681,41 @@ return 0;
 ```C++ language
 #include<iostream>
 using namespace std;
-int main()
-{
+int main() {
 char ch = 'a';
 char b = toupper(ch);
-cout<<" lower case letter "<<ch<<" is converted to upper case letter "<<b;
+cout<<"Lower case letter "<<ch<<" is converted to Upper case letter "<<b;
+return 0;
+}
+
+```
+----------------------------------------
+
+# Question 27
+
+### **Question:**
+
+> ***Write a program that takes a distance in centimeters and outputs the corresponding value in inches.***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+using namespace std;
+#define x 2.54
+int main() {
+double inch, cm;
+cout<<"Enter the distance in cm: ";
+cin>>cm;
+inch = cm / x;
+cout<<"\nDistance of "<< cm << " cms is equal to " << inch << " inches";
 return 0;
 }
 ```
 ----------------------------------------
+
 
 # Question 28
 
@@ -783,27 +738,22 @@ Einstein [7] = N</br>***
 ```C++ language
 #include<iostream>
 using namespace std;
-int main()
-{
+int main() {
 int i;
 char name [8] = {'E' , 'I', 'N', 'S', 'T', 'E', 'I', 'N'};
 for(i=0; i<8; i++)
-cout<<"Element ["<< i <<" ] = "<< name[i] << endl;
+cout<<"Einstein ["<< i <<" ] = "<< name[i] << endl;
 return 0;
 }
 ```
 ----------------------------------------
+
 
 # Question 29
 
 ### **Question:**
 
-> ***Write a program to print the output:</br>
-Name of the book = B</br>
-Price of the book = 135.00</br>
-Number of pages = 300</br>
-Edition = 8</br>
-using structures.***
+> ***Write a program to print "Hello World" 10 times.***
 
 ---------------------------------------
 
@@ -812,80 +762,17 @@ using structures.***
 ```C++ language
 #include<iostream>
 using namespace std;
-int main()
-{
-struct book {
-char name;
-float price;
-int pages;
-int edition;
-};
-struct book b1= {'B', 135.00, 300, 8};
-cout<<"Name of the book = "<< b1.name<< endl;
-cout<<"Price of the book = "<< b1.price<<endl;
-cout<<"Number of pages = "<< b1.pages<<endl;
-cout<<"Edition of the book = "<< b1.edition<< endl;
+int main() {
+for(int i=1; i<=10; i++) {
+cout<< "Hello World"<< endl;
+}
 return 0;
 }
 ```
 ----------------------------------------
+
 
 # Question 30
-
-### **Question:**
-
-> ***Write a program to find square of a number using functions.***
-
----------------------------------------
-
-<strong>Solution: </strong>
-
-```C++ language
-#include<iostream>
-using namespace std;
-int square();
-int main()
-{
-int answer;
-answer = square();
-cout<<"Square of the given number = "<< answer;
-return 0;
-}
-int square()
-{
-int x;
-cout<<"Enter any integer:";
-cin>>x;
-return x*x;
-}
-```
-----------------------------------------
-
-# Question 31
-
-### **Question:**
-
-> ***Write a program To print "hello world" 10 times.***
-
----------------------------------------
-
-<strong>Solution: </strong>
-
-```C++ language
-#include<iostream>
-using namespace std;
-int main()
-{
-int i;
-for (i =1; i<=10; i ++)
-cout<<"\n hello world";
-return 0;
-}
-```
-----------------------------------------
-
-
-# Question 32
 
 ### **Question:**
 
@@ -898,19 +785,453 @@ return 0;
 ```C++ language
 #include<iostream>
 using namespace std;
-int main()
-{
+int main() {
 int i =1;
-do
-{
-cout<<" \n i= "<< i++;
-} while (i<=5);
+do {
+cout<<" \ni = "<< i++;
+} while(i<=5);
 return 0;
 }
 ```
 ----------------------------------------
 
+
+
+# Question 31
+
+### **Question:**
+
+> ***Write a program to check whether a character is an alphabet or not.***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+using namespace std;
+int main() {
+int a = 2;
+if(isalpha(a)) {
+cout<<"The character a is an alphabet"; 
+}
+else {
+cout<<"The character a is not an alphabet"; 
+}
+return 0;
+}
+```
+----------------------------------------
+
+
+# Question 32
+
+### **Question:**
+
+> ***Write a program to check whether a entered number is even or odd.***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+using namespace std;
+int main() {
+int a;
+cout<<"Enter any number: ";
+cin>>a;
+if(a%2 == 0) {
+cout<<"The entered number is even";
+}
+else {
+cout<<"The entered number is odd";
+}
+return 0;
+}
+```
+----------------------------------------
+
+
 # Question 33
+
+### **Question:**
+
+> ***Write a program to print the ASCII value of the entered character.***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+using namespace std;
+int main() {
+char c;
+cout << "Enter a character: ";
+cin >> c;
+cout << "The ASCII Value of " << c << " is " << int(c);
+return 0;
+}
+```
+----------------------------------------
+
+
+# Question 34
+
+### **Question:**
+
+> ***Write a program that will print all numbers between 1 to 50 which divided by a specified number and the remainder will be 2.***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+using namespace std;
+int main() {
+int x, i;
+cout<<"Enter a number: ";
+cin>>x;
+for(i=1; i<=50; i++) {
+   if((i%x)==2) {
+    cout<<i<<endl;
+	 }
+}
+return 0;
+}
+```
+----------------------------------------
+
+
+# Question 35
+
+### **Question:**
+
+> ***Write a program to determine whether two numbers in a pair are in ascending or descending order.***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+using namespace std;
+int main() {
+int a, b;
+cout<<"\nEnter a pair of numbers (for example 22,12 | 12,22): ";
+cout<<"\nEnter the first number: ";
+cin>>a;
+cout<<"\nEnter the second number: ";
+cin>>b;
+if (a>b) {
+cout<<"\nThe two numbers in a pair are in descending order.";
+}
+else {
+cout<<"\nThe two numbers in a pair are in ascending order.";
+}
+return 0;
+} 
+```
+----------------------------------------
+
+
+
+# Question 36
+
+### **Question:**
+
+> ***Write a program that reads two numbers and divides one by the other. Specify "Division not possible" if that is not possible.***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+using namespace std;
+int main() {
+int a, b;
+float c;
+cout<<"\nEnter the first number: ";
+cin>>a;
+cout<<"\nEnter the second number: ";
+cin>>b;
+if(b != 0) {
+   	c = (float)a/(float)b;
+	cout<<a<<"/"<<b<<" = "<< c;
+} 
+else {
+	 cout<<"\nDivision not possible.\n";
+}
+return 0;
+}
+```
+----------------------------------------
+
+# Question 37
+
+### **Question:**
+
+> ***Write a program that will print all numbers between 1 to 50 which divided by a specified number and the remainder is equal to 2 or 3.***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+using namespace std;
+int main() {
+int x, i;
+cout<<"Enter a number: ";
+cin>>x;
+for(i=1; i<=50; i++) {
+   if((i%x)==2 || (i%x) == 3) {
+    cout<<i<<endl;
+	 }
+}
+return 0;
+}
+```
+----------------------------------------
+
+
+
+# Question 38
+
+### **Question:**
+
+> ***Write a program that adds up all numbers between 1 and 100 that are not divisible by 12.***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+using namespace std;
+int main() {
+int x =12, i, sum = 0;
+for(i=1; i<=100; i++) {
+   if((i%x)!= 0) {
+    sum += i;
+	 }
+}
+cout<<"\nSum: "<<sum;
+return 0;
+}
+```
+----------------------------------------
+
+
+# Question 39
+
+### **Question:**
+
+> ***Write a program to calculate the value of x where x = 1 + 1/2 + 1/3 + … + 1/50.***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+using namespace std;
+int main() {
+float x = 0;
+for(int i=1; i<=50; i++) {
+   x += (float)1/i;
+}
+cout<<"Value of x: "<< x;
+return 0;
+}
+```
+----------------------------------------
+
+
+# Question 40
+
+### **Question:**
+
+> ***Write a program that reads a number and find all its divisor.***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+using namespace std;
+int main() {
+int x, i;
+cout<<"\nEnter a number: ";
+cin>>x;
+cout<<"All the divisor of "<<x<<" are: \n";
+for(i = 1; i <= x; i++) {
+    if((x%i) == 0) {
+	cout<<i<<endl;
+    }
+}	
+return 0;
+}
+```
+----------------------------------------
+
+
+# Question 41
+
+### **Question:**
+
+> ***Write a program to find the incremented and decremented values of two numbers.***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+using namespace std;
+int main() {
+int a, b, c, d, e, f;
+a = 10;
+b=12;
+c=a+1;
+d=b+1;
+e=a-1;
+f=b-1;
+cout<<"The incremented value of a = "<< c << endl;
+cout<<"The incremented value of b = "<< d << endl;
+cout<<"The decremented value of a = "<< e << endl;
+cout<<"The decremented value of b = "<< f << endl;
+return 0;
+}
+```
+----------------------------------------
+
+
+# Question 42
+
+### **Question:**
+
+> ***Write a program to find square of a entered number using functions.***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+using namespace std;
+int square();
+int main() {
+int answer;
+answer = square();
+cout<<"The square of the entered number is: "<< answer;
+return 0;
+}
+int square() {
+int x;
+cout<<"Enter any number: ";
+cin>>x;
+return x*x;
+}
+```
+----------------------------------------
+
+
+# Question 43
+
+### **Question:**
+
+> ***Write a program that accepts principal amount, rate of interest, time and compute the simple interest.***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+using namespace std;
+int main() {
+int P,T, R, SI;
+cout<<"Enter the principal amount: ";
+cin>>P;
+cout<<"Enter the time: ";
+cin>>T;
+cout<<"Enter the rate of interest: ";
+cin>>R;
+SI = P*T*R/100;
+cout<<"The simple interest is: "<<SI;
+return 0;
+}
+```
+----------------------------------------
+
+
+# Question 44
+
+### **Question:**
+
+> ***Write a program that swaps two numbers without using third variable.***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+using namespace std;
+int main() {
+int a, b;
+cout<<"\nEnter the value for a: ";
+cin>>a;
+cout<<"\nEnter the value for b: ";
+cin>>b;
+cout<<"\nBefore swapping: " <<a <<" "<<b;
+a=a+b;
+b=a-b;
+a=a-b;
+cout<<"\nAfter swapping: " <<a<<" "<<b;
+return 0;
+}
+```
+----------------------------------------
+
+# Question 45
+
+### **Question:**
+
+> ***Write a program to find the greatest of two entered numbers using pointers.***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+using namespace std;
+int main() {
+int x, y, *p, *q;
+cout<<"Enter the value for x: ";
+cin>> x;
+cout<<"Enter the value for y: ";
+cin>> y;
+p = &x;
+q = &y;
+if(*p>*q) {
+cout<<"x is greater than y";
+}
+else {
+cout<<"y is greater than x";
+}
+return 0;
+}
+```
+----------------------------------------
+
+# Question 46
 
 ### **Question:**
 
@@ -925,78 +1246,20 @@ body [y] = y</br>***
 <strong>Solution: </strong>
 
 ```C++ language
-#include <iostream>
+#include<iostream>
 using namespace std;
-int main()
-{
+int main() {
 char i;
 char body [4] = {'b', 'o', 'd', 'y'};
 for(i=0; i<4; i++)
 cout<<"\n body ["<<body[i] <<" ] = "<< body[i] << endl;
 return 0;
 }
+
 ```
 ----------------------------------------
 
-
-# Question 34
-
-### **Question:**
-
-> ***What will be the output of the below program:***
-
----------------------------------------
-
-```C++ language
-#include <iostream>
-using namespace std;
-int main()
-{
-cout<<"linux\n";
-exit (0);
-cout<<"php\n";
-return 0;
-}
-```
-----------------------------------------
-
-<strong>Solution: </strong>
-
-```C language
-linux
-```
-----------------------------------------
-
-# Question 35
-
-### **Question:**
-
-> ***Write a program to check whether a character is an alphabet or not.***
-
----------------------------------------
-
-<strong>Solution: </strong>
-
-```C++ language
-#include <iostream>
-using namespace std;
-int main()
-{
-int a =2;
-if(isalpha(a))
-{
-   cout<<"The character a is an alphabet"; 
-}
-else
-{
-cout<<"The character a is not an alphabet"; 
-}
-return 0;
-}
-```
-----------------------------------------
-
-# Question 36
+# Question 47
 
 ### **Question:**
 
@@ -1013,32 +1276,28 @@ If purchase value is greater than 10000, 30% discount.***
 ```C++ language
 #include<iostream>
 using namespace std;
-int main()
-{
+int main() {
 double PV;
-cout<<"Enter purchased value:";
+cout<<"Enter purchased value: ";
 cin>>PV;
-if(PV>1000)
-{
-cout<<"Discount = "<< PV* 0.1 << endl;
-cout<<"Total= "<< PV - PV* 0.1 << endl;
+if(PV>1000) {
+cout<<"Discount = "<< PV * 0.1 << endl;
+cout<<"Total= "<< PV - PV * 0.1 << endl;
 }
-else if(PV>5000)
-{
-cout<<"Discount = "<< PV* 0.2 << endl;
-cout<<"Total= "<< PV - PV* 0.1 << endl;
+else if(PV>5000) {
+cout<<"Discount = "<< PV * 0.2 << endl;
+cout<<"Total= "<< PV - PV * 0.2 << endl;
 }
-else
-{
-cout<<"Discount = "<< PV* 0.3 << endl;
-cout<<"Total= "<< PV - PV* 0.1 << endl;
+else {
+cout<<"Discount = "<< PV * 0.3 << endl;
+cout<<"Total= "<< PV - PV * 0.3 << endl;
 }
 return 0;
 }
 ```
 ----------------------------------------
 
-# Question 37
+# Question 48
 
 ### **Question:**
 
@@ -1051,107 +1310,339 @@ return 0;
 ```C++ language
 #include<iostream>
 using namespace std;
-int main()
-{
+int main() {
 int i = 1;
-while (i<=10)
-{
-cout<<"\n "<< i++;
+while(i<=10) {
+cout<<"\n" << i++;
 }
 return 0;
 }
 ```
 ----------------------------------------
 
-# Question 38
+
+# Question 49
 
 ### **Question:**
 
-> ***What will be the output of the below program:***
+> ***Write a program to shift inputted data by two bits to the left.***
 
 ---------------------------------------
 
+<strong>Solution: </strong>
+
 ```C++ language
-#include <iostream>
+#include<iostream>
 using namespace std;
-int main()
-{
-int i;
-for (i=1; i<=5; i++)
-{
-if (i==3)
-{
-continue;
+int main() {
+int x;
+cout<<"Enter the integer from keyboard: ";
+cin>>x;
+cout<<"\nEntered value: "<< x;
+cout<<"\nThe left shifted data is: " << (x<<=2);
+return 0;
 }
-cout<<"\n "<< i;
+```
+----------------------------------------
+
+# Question 50
+
+### **Question:**
+
+> ***Write a program to shift inputted data by two bits to the Right.***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+using namespace std;
+int main() {
+int x;
+cout<<"Enter the integer from keyboard: ";
+cin>>x;
+cout<<"\nEntered value: "<< x;
+cout<<"\nThe right shifted data is: " << (x>>=2);
+return 0;
+}
+```
+----------------------------------------
+
+
+
+# Question 51
+
+### **Question:**
+
+> ***Write a program to calculate the exact difference between x and 21. Return three times the absolute difference if x is greater than 21.***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+using namespace std;
+int main() {
+int x;
+cout<<"Enter the value for x: ";
+cin>>x;
+if(x<=21){
+    cout<<abs(x-21);
+ }
+else if(x>=21) {
+    cout<<abs(x-21)*3;
 }
 return 0;
 }
 ```
 ----------------------------------------
 
-<strong>Solution: </strong>
 
-```C language
-1
-2
-4
-5
-```
-----------------------------------------
-
-# Question 39
+# Question 52
 
 ### **Question:**
 
-> ***Write a program to find the size of an array.***
+> ***Write a program that reads in two numbers and determine whether the first number is a multiple of the second number.***
 
-----------------------------------------
+---------------------------------------
 
 <strong>Solution: </strong>
 
 ```C++ language
-#include <iostream>
+#include<iostream>
 using namespace std;
-int main()
-{
-   int num [] = {11, 22, 33, 44, 55, 66};
-    int n;
-
-    /* Calculating the size of the array with this formula.
-     * n = sizeof(array_name) / sizeof(array_name[0])
-     * This is a universal formula to find number of elements in
-     * an array, which means it will work for arrays of all data
-     * types such as int, char, float etc.
-     */
-    n = sizeof(num) / sizeof(num [0]);
-    cout<<"Size of the array is:"<<n;
-    return 0;
+int main() {
+int x, y;
+cout<<"\nEnter the first number: ";
+cin>>x;
+cout<<"\nEnter the second number: ";
+cin>>y;
+if(x % y == 0) {
+cout<<x<<" is a multiple of " <<y;
+}
+else {
+cout<<x<<" is not a multiple of " <<y;    
+}
+return 0;
 }
 ```
 ----------------------------------------
 
-# Question 40
+
+# Question 53
 
 ### **Question:**
 
-> ***What would be the output of the following programs:***
+> ***Write a program to print the output:</br>
+Name of the book = B</br>
+Price of the book = 135.00</br>
+Number of pages = 300</br>
+Edition of the book = 8</br>
+using structures.***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+using namespace std;
+int main() {
+struct book {
+char name;
+float price;
+int pages;
+int edition;
+};
+struct book b1= {'B', 135.00, 300, 8};
+cout<<"Name of the book = "<< b1.name<< endl;
+cout<<"Price of the book = "<< b1.price<<endl;
+cout<<"Number of pages = "<< b1.pages<<endl;
+cout<<"Edition of the book = "<< b1.edition<< endl;
+return 0;
+}
+```
+----------------------------------------
+
+
+# Question 54
+
+### **Question:**
+
+> ***Write a program to convert Celsius into Fahrenheit.***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+using namespace std;
+int main() {   
+float fahrenheit, celsius;  
+celsius = 36;  
+fahrenheit = ((celsius*9)/5)+32;  
+cout<<"\nTemperature in fahrenheit is: "<<fahrenheit;  
+return 0;  
+} 
+```
+----------------------------------------
+
+
+# Question 55
+
+### **Question:**
+
+> ***Write a program that will examine two inputted integers and return true if either of them is 50 or if their sum is 50.***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+using namespace std;
+int main() {
+int x, y; 
+cout<<"\nEnter the value for x: ";
+cin>>x;
+cout<<"\nEnter the value for y: ";
+cin>>y;
+if(x == 50 || y == 50 || (x + y == 50)) {
+    cout<<"\nTrue";
+} 
+else {
+    cout<<"\nFalse";
+}    
+return 0;
+}
+```
+----------------------------------------
+
+
+# Question 56
+
+### **Question:**
+
+> ***Write a program that counts the even, odd, positive, and negative values among eighteen integer inputs.***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+using namespace std;
+int main () {
+int x, even = 0, odd = 0, positive = 0, negative = 0;
+cout<<"\nPlease enter 18 numbers: \n";
+for(int i = 0; i < 18; i++) {
+cin>>x;
+if (x > 0) {
+    positive++;
+}
+if(x < 0) {
+    negative++;
+}
+if(x % 2 == 0) {
+    even++;
+}
+if(x % 2 != 0) {
+    odd++;
+}
+}
+cout<<"\nNumber of even values: "<<even;
+cout<<"\nNumber of odd values: "<<odd;
+cout<<"\nNumber of positive values: "<<positive;
+cout<<"\nNumber of negative values: "<<negative;
+return 0;
+}
+```
+----------------------------------------
+
+
+# Question 57
+
+### **Question:**
+
+> ***Write a program to check whether the person is a senior citizen or not.***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+using namespace std;
+int main() {
+int age;
+cout<<"Enter age: ";
+cin>>age;
+if(age>=60) {
+cout<<"Senior citizen";
+}
+else {
+cout<<"Not a senior citizen";
+}
+return 0;
+}
+```
+----------------------------------------
+
+
+# Question 58
+
+### **Question:**
+
+> ***Write a program that reads a student's three subject scores (0-100) and computes the average of those scores.***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+using namespace std;
+int main() {
+float score, total_score = 0;
+int subject = 0;
+cout<<"Enter three subject scores (0-100):\n";
+while (subject != 3) {
+cin>>score;
+if(score < 0 || score > 100) {
+cout<<"Please enter a valid score.\n";
+}
+else {
+total_score += score;
+subject++;
+  }
+}
+cout<<"Average score = "<< (total_score/3);
+return 0;
+} 
+```
+----------------------------------------
+
+
+# Question 59
+
+### **Question:**
+
+> ***What results would the following programs produce?***
 
 ----------------------------------------
 
 ```C++ language
-#include <iostream>
+#include<iostream>
 using namespace std;
-int main()
-{
-int i;
-for (i=1; i<=5; i++)
-{
-if (i==3)
-{
+int main() {
+for(int i=1; i<=5; i++) {
+if(i==3) {
 break;
 }
-cout<<"\n "<< i;
+cout<<"\n"<< i;
 }
 return 0;
 }
@@ -1160,7 +1651,7 @@ return 0;
 
 <strong>Solution: </strong>
 
-```C language
+```C++ language
 1
 2
 ```
@@ -1169,16 +1660,12 @@ return 0;
 ```C++ language
 #include<iostream>
 using namespace std;
-int main()
-{
-int i;
-for(i=1;i<=5;i++)
-{
-if(i==3)
-{
+int main() {
+for(int i=1;i<=5;i++) {
+if(i==3) {
 goto HAI;
 }
-cout<<"\n "<< i;
+cout<<"\n "<<i;
 }
 HAI : cout<<"\n Linux";
 }
@@ -1197,70 +1684,7 @@ Linux
 ```C++ language
 #include<iostream>
 using namespace std;
-int main()
-{
-int i = 54;
-int y = i<<1;
-cout<<"The value of y = "<< y;
-return 0;
-}
-```
-----------------------------------------
-
-<strong>Solution: </strong>
-
-```C++ language
-The value of y = 108
-```
-----------------------------------------
-
-```C++ language
-#include<iostream>
-using namespace std;
-int main()
-{
-int i = 54;
-int y = i>>1;
-cout<<"The value of y = "<< y;
-return 0;
-}
-```
-----------------------------------------
-
-<strong>Solution: </strong>
-
-```C++ language
-The value of y = 27
-```
-----------------------------------------
-
-```C++ language
-#include<iostream>
-#include<cmath>
-using namespace std;
-int main()
-{
-int a, b;
-a= - 2;
-b= abs(a);
-cout<<" Absolute value = "<< b<< endl;
-return 0;
-}
-```
-----------------------------------------
-
-<strong>Solution: </strong>
-
-```C++ language
-Absolute value = 2
-```
-----------------------------------------
-
-```C++ language
-#include <iostream>
-using namespace std;
-int main()
-{
+int main() {
 for( ; ; ) {
 cout<<"This loop will run forever.\n";
 }
@@ -1271,7 +1695,7 @@ return 0;
 
 <strong>Solution: </strong>
 
-```C language
+```C++ language
 This loop will run forever.
 This loop will run forever.
 This loop will run forever.
@@ -1285,11 +1709,10 @@ This loop will run forever. .........
 ```C++ language
 #include<iostream>
 using namespace std;
-int main()
-{
-cout<<"Hello World!";
+int main() {
+cout<<"Hello,world!";
 return 0;
-cout<<"Hello World!";
+cout<<"Hello,world!";
 }
 ```
 ----------------------------------------
@@ -1301,615 +1724,2473 @@ Hello,world!
 ```
 ----------------------------------------
 
-# Question 41
-
-### **Question:**
-
-> ***Write a program to check whether the person is a senior citizen or not.***
-
----------------------------------------
+```C++ language
+#include<iostream>
+using namespace std;
+int main () {
+cout<<"linux\n";
+exit (0);
+cout<<"php\n";
+return 0;
+}
+```
+----------------------------------------
 
 <strong>Solution: </strong>
 
 ```C++ language
+linux
+```
+----------------------------------------
+
+```C++ language
 #include<iostream>
 using namespace std;
-int main()
-{
-int age;
-age=20;
-if(age > = 60)
-{
-cout<<"Senior citizen";
+int main() {
+for(int i=1; i<=5; i++) {
+if(i==3) {
+continue;
 }
-if(age<60)
-{
-cout<<"Not a senior citizen";
+cout<<"\n "<<i;
 }
 return 0;
 }
 ```
 ----------------------------------------
 
-# Question 42
+<strong>Solution: </strong>
 
-### **Question:**
+```C++ language
+1
+2
+4
+5
+```
+----------------------------------------
 
-> ***Write a program to compute inverse of tan x.***
-
----------------------------------------
+```C++ language
+#include<iostream>
+using namespace std;
+int main() {
+int a = 10, b = 20, c;
+c = (a < b) ? a : b;
+cout<<c;
+return 0;
+}
+```
+----------------------------------------
 
 <strong>Solution: </strong>
 
 ```C++ language
+10
+
+```
+
+----------------------------------------
+
+```C++ language
 #include<iostream>
-#include<math.h>
 using namespace std;
-int main()
-{
+#define A 15
+int main() {
+int x;
+x=A;
+cout<<x;
+return 0;
+}
+
+```
+----------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+15
+
+```
+
+----------------------------------------
+
+
+```C++ language
+#include<iostream>
+#include<cmath>
+using namespace std;
+int main() {
 int x = 20;
 cout<<"Inverse of tan x = "<< atan(x);
 return 0;
 }
+
 ```
 ----------------------------------------
- 
- 
-# Question 43
-
-### **Question:**
-
-> ***Write a program to Find All Roots of a Quadratic Equation.***
-
----------------------------------------
 
 <strong>Solution: </strong>
 
-```c++
-#include <iostream>
-#include <cmath>
-using namespace std;
+```C++ language
 
+Inverse of tan x = 1.52084
+
+```
+
+----------------------------------------
+
+
+```C++ language
+#include<iostream>
+#include<cmath>
+using namespace std;
 int main() {
-
-    float a, b, c, x1, x2, discriminant, realPart, imaginaryPart;
-    cout << "Enter coefficients a, b and c: ";
-    cin >> a >> b >> c;
-    discriminant = b*b - 4*a*c;
-    
-    if (discriminant > 0) {
-        x1 = (-b + sqrt(discriminant)) / (2*a);
-        x2 = (-b - sqrt(discriminant)) / (2*a);
-        cout << "Roots are real and different." << endl;
-        cout << "x1 = " << x1 << endl;
-        cout << "x2 = " << x2 << endl;
-    }
-    
-    else if (discriminant == 0) {
-        cout << "Roots are real and same." << endl;
-        x1 = -b/(2*a);
-        cout << "x1 = x2 =" << x1 << endl;
-    }
-
-    else {
-        realPart = -b/(2*a);
-        imaginaryPart =sqrt(-discriminant)/(2*a);
-        cout << "Roots are complex and different."  << endl;
-        cout << "x1 = " << realPart << "+" << imaginaryPart << "i" << endl;
-        cout << "x2 = " << realPart << "-" << imaginaryPart << "i" << endl;
-    }
-
-    return 0;
+double a, b;
+a = -2.5;
+b = fabs(a);
+cout<<"|"<<a<<"|" << " = "<<b;
+return 0;
 }
+
 ```
 ----------------------------------------
 
-# Question 44
-
-### **Question:**
-
-> ***Write a program to Display Fibonacci Series.***
-
----------------------------------------
-
 <strong>Solution: </strong>
 
-```c++
-#include <iostream>
-using namespace std;
+```C++ language
+|-2.5| = 2.5
 
-int main()
-{
-    int n, t1 = 0, t2 = 1, nextTerm = 0;
-
-    cout << "Enter the number of terms: ";
-    cin >> n;
-
-    cout << "Fibonacci Series: ";
-
-    for (int i = 1; i <= n; ++i)
-    {
-        // Prints the first two terms.
-        if(i == 1)
-        {
-            cout << " " << t1;
-            continue;
-        }
-        if(i == 2)
-        {
-            cout << t2 << " ";
-            continue;
-        }
-        nextTerm = t1 + t2;
-        t1 = t2;
-        t2 = nextTerm;
-        
-        cout << nextTerm << " ";
-    }
-    return 0;
-}
 ```
+
 ----------------------------------------
 
-# Question 45
-
-### **Question:**
-
-> ***Write a program to Find GCD.***
-
----------------------------------------
-
-<strong>Solution: </strong>
-
-```c++
-#include <iostream>
-using namespace std;
-
-int main()
-{
-    int n1, n2;
-
-    cout << "Enter two numbers: ";
-    cin >> n1 >> n2;
-    
-    while(n1 != n2)
-    {
-        if(n1 > n2)
-            n1 -= n2;
-        else
-            n2 -= n1;
-    }
-
-    cout << "HCF = " << n1;
-    return 0;
-}
-```
-----------------------------------------
-
-# Question 46
-
-### **Question:**
-
-> ***Write a program to Find LCM.***
-
----------------------------------------
-
-<strong>Solution: </strong>
-
-```c++
-#include <iostream>
-using namespace std;
-
-int main()
-{
-    int n1, n2, max;
-
-    cout << "Enter two numbers: ";
-    cin >> n1 >> n2;
-    
-    // maximum value between n1 and n2 is stored in max
-    max = (n1 > n2) ? n1 : n2;
-
-    do
-    {
-        if (max % n1 == 0 && max % n2 == 0)
-        {
-            cout << "LCM = " << max;
-            break;
-        }
-        else
-            ++max;
-    } while (true);
-    
-    return 0;
-}
-```
-----------------------------------------
-
-# Question 47
-
-### **Question:**
-
-> ***Write a program to Display Prime Numbers Between Two Intervals.***
-
----------------------------------------
-
-<strong>Solution: </strong>
-
-```c++
-#include <iostream>
-using namespace std;
-
-int main() {
-    int low, high, i;
-    bool isPrime = true;
-
-    cout << "Enter two numbers (intervals): ";
-    cin >> low >> high;
-
-    cout << "\nPrime numbers between " << low << " and " << high << " are: " << endl;
-
-    while (low < high) {
-        isPrime = true;
-        if (low == 0 || low == 1) {
-            isPrime = false;
-        }
-        else {
-            for (i = 2; i <= low / 2; ++i) {
-                if (low % i == 0) {
-                    isPrime = false;
-                    break;
-                }
-            }
-        }
-        
-        if (isPrime)
-            cout << low << " ";
-
-        ++low;
-    }
-
-    return 0;
-}
-```
-----------------------------------------
-
-# Question 48
-
-### **Question:**
-
-> ***Write a program to Check Armstrong Number.***
-
----------------------------------------
-
-<strong>Solution: </strong>
-
-```c++
-#include <iostream>
-using namespace std;
-
-int main() {
-    int num, originalNum, remainder, result = 0;
-    cout << "Enter a three-digit integer: ";
-    cin >> num;
-    originalNum = num;
-
-    while (originalNum != 0) {
-        // remainder contains the last digit
-        remainder = originalNum % 10;
-        
-        result += remainder * remainder * remainder;
-        
-        // removing last digit from the orignal number
-        originalNum /= 10;
-    }
-
-    if (result == num)
-        cout << num << " is an Armstrong number.";
-    else
-        cout << num << " is not an Armstrong number.";
-
-    return 0;
-}
-```
-----------------------------------------
-
-# Question 49
-
-### **Question:**
-
-> ***Write a program to print half pyramid using &#x2A;.***
-
----------------------------------------
-
-<strong>Solution: </strong>
-
-```c++
-#include <iostream>
-using namespace std;
-
-int main()
-{
-    int rows;
-
-    cout << "Enter number of rows: ";
-    cin >> rows;
-
-    for(int i = 1; i <= rows; ++i)
-    {
-        for(int j = 1; j <= i; ++j)
-        {
-            cout << "* ";
-        }
-        cout << "\n";
-    }
-    return 0;
-}
-```
-----------------------------------------
-
-
-
-# Question 50
-
-### **Question:**
-
-> ***Write a program to print half pyramid using numbers.***
-
----------------------------------------
-
-<strong>Solution: </strong>
-
-```c++
-#include <iostream>
-using namespace std;
-
-int main()
-{
-    int rows;
-
-    cout << "Enter number of rows: ";
-    cin >> rows;
-
-    for(int i = 1; i <= rows; ++i)
-    {
-        for(int j = 1; j <= i; ++j)
-        {
-            cout << j << " ";
-        }
-        cout << "\n";
-    }
-    return 0;
-}
-```
-----------------------------------------
-
-# Question 51
-
-### **Question:**
-
-> ***Write a program to Find Sum of Natural Numbers using Recursion.***
-
----------------------------------------
-
-<strong>Solution: </strong>
-
-```c++
+```C++ language
 #include<iostream>
 using namespace std;
-
-int add(int n);
-
-int main()
-{
-    int n;
-
-    cout << "Enter a positive integer: ";
-    cin >> n;
-
-    cout << "Sum =  " << add(n);
-
-    return 0;
-}
-
-int add(int n)
-{
-    if(n != 0)
-        return n + add(n - 1);
-    return 0;
-}
-```
-----------------------------------------
-
-# Question 52
-
-### **Question:**
-
-> ***Write a program to Access Elements of an Array Using Pointer.***
-
----------------------------------------
-
-<strong>Solution: </strong>
-
-```c++
-#include <iostream>
-using namespace std;
-
-int main()
-{
-   int data[5];
-   cout << "Enter elements: ";
-
-   for(int i = 0; i < 5; ++i)
-      cin >> data[i];
-
-   cout << "You entered: ";
-   for(int i = 0; i < 5; ++i)
-      cout << endl << *(data + i);
-
-   return 0;
-}
-```
-----------------------------------------
-
-# Question 53
-
-### **Question:**
-
-> ***Write a program to Store Information of a Student in a Structure.***
-
----------------------------------------
-
-<strong>Solution: </strong>
-
-```c++
-#include <iostream>
-using namespace std;
-
-struct student
-{
-    char name[50];
-    int roll;
-    float marks;
-};
-
-int main() 
-{
-    student s;
-    cout << "Enter information," << endl;
-    cout << "Enter name: ";
-    cin >> s.name;
-    cout << "Enter roll number: ";
-    cin >> s.roll;
-    cout << "Enter marks: ";
-    cin >> s.marks;
-
-    cout << "\nDisplaying Information," << endl;
-    cout << "Name: " << s.name << endl;
-    cout << "Roll: " << s.roll << endl;
-    cout << "Marks: " << s.marks << endl;
-    return 0;
-}
-
-```
-----------------------------------------
-
-# Question 54
-
-### **Question:**
-
-> ***Write a program to Store and Display Information Using Structure.***
-
----------------------------------------
-
-<strong>Solution: </strong>
-
-```c++
-#include <iostream>
-using namespace std;
-
-struct student
-{
-    char name[50];
-    int roll;
-    float marks;
-} s[10];
-
-int main()
-{
-    cout << "Enter information of students: " << endl;
-
-    // storing information
-    for(int i = 0; i < 10; ++i)
-    {
-        s[i].roll = i+1;
-        cout << "For roll number" << s[i].roll << "," << endl;
-
-        cout << "Enter name: ";
-        cin >> s[i].name;
-
-        cout << "Enter marks: ";
-        cin >> s[i].marks;
-
-        cout << endl;
-    }
-
-    cout << "Displaying Information: " << endl;
-
-    // Displaying information
-    for(int i = 0; i < 10; ++i)
-    {
-        cout << "\nRoll number: " << i+1 << endl;
-        cout << "Name: " << s[i].name << endl;
-        cout << "Marks: " << s[i].marks << endl;
-    }
-
-    return 0;
-}
-```
-----------------------------------------
-
-# Question 55
-
-### **Question:**
-
-> ***Write a program to Add Complex Numbers by Passing Structure to a Function.***
-
----------------------------------------
-
-<strong>Solution: </strong>
-
-```c++
-#include <iostream>
-using namespace std;
-
-typedef struct complex {
-    float real;
-    float imag;
-} complexNumber;
-
-complexNumber addComplexNumbers(complex, complex);
-
 int main() {
-    complexNumber num1, num2, complexSum;
-    char signOfImag;
-
-    cout << "For 1st complex number," << endl;
-    cout << "Enter real and imaginary parts respectively:" << endl;
-    cin >> num1.real >> num1.imag;
-
-    cout << endl
-         << "For 2nd complex number," << endl;
-    cout << "Enter real and imaginary parts respectively:" << endl;
-    cin >> num2.real >> num2.imag;
-
-    // Call add function and store result in complexSum
-    complexSum = addComplexNumbers(num1, num2);
-
-    // Use Ternary Operator to check the sign of the imaginary number
-    signOfImag = (complexSum.imag > 0) ? '+' : '-';
-
-    // Use Ternary Operator to adjust the sign of the imaginary number
-    complexSum.imag = (complexSum.imag > 0) ? complexSum.imag : -complexSum.imag;
-
-    cout << "Sum = " << complexSum.real << signOfImag << complexSum.imag << "i";
-
-    return 0;
+int x=12, y =3;
+cout<<abs(-x-y);
+return 0;
 }
 
-complexNumber addComplexNumbers(complex num1, complex num2) {
-    complex temp;
-    temp.real = num1.real + num2.real;
-    temp.imag = num1.imag + num2.imag;
-    return (temp);
+```
+----------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+15
+
+```
+
+----------------------------------------
+
+```C++ language
+#include<iostream>
+using namespace std;
+int main() {
+int x=12, y =3;
+cout<<-(-x-y);
+return 0;
 }
 ```
 ----------------------------------------
 
+<strong>Solution: </strong>
+
+```C++ language
+15
+
+```
+
+----------------------------------------
+
+```C++ language
+#include <iostream>
+using namespace std;
+int main() {
+int x=12, y =3;
+cout<< x-(-y);
+return 0;
+}
+```
+----------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+15
+
+```
+
+----------------------------------------
+
+
+
+# Question 60
+
+### **Question:**
+
+> ***Write a program to find the size of an array.***
+
+----------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+using namespace std;
+int main() {
+int num [] = {11, 22, 33, 44, 55, 66};
+int n = sizeof(num) / sizeof(num [0]);
+cout<<"Size of the array is: " << n;
+return 0;
+}
+```
+----------------------------------------
+
+# Question 61
+
+### **Question:**
+
+> ***Write a program that prints a sequence from 1 to a given integer, inserts a plus sign between these numbers, and then removes the plus sign at the end of the sequence.***
+
+----------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+using namespace std;
+int main () {
+int x, i;
+cout<<"\nEnter a integer: \n";
+cin>>x;
+if(x>0) {
+cout<<"Sequence from 1 to "<< x << ":\n";
+for(i=1; i<x; i++)  {
+cout<<i<<"+";
+}
+cout<<i<<"\n";
+}
+return 0;
+}
+```
+----------------------------------------
+
+# Question 62
+
+### **Question:**
+
+> ***Write a program to verify whether a triangle's three sides form a right angled triangle or not.***
+
+----------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+using namespace std;
+int main() {
+int a,b,c;
+cout<<"Enter the three sides of a triangle: \n";
+cin>>a;
+cin>>b;
+cin>>c;  
+if((a*a)+(b*b)==(c*c) || (a*a)+(c*c)==(b*b) || (b*b)+(c*c)==(a*a)) {  
+cout<<"Triangle's three sides form a right angled triangle.\n";  
+}
+else { 
+cout<<"Triangle's three sides does not form a right angled triangle.\n"; 
+}
+return 0;
+}
+```
+----------------------------------------
+
+# Question 63
+
+### **Question:**
+
+> ***Write a program that will find the second-largest number among the user's input of three numbers.***
+
+----------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+using namespace std;
+int main() {
+int a, b, c;
+cout<<"\nEnter the first number: ";
+cin>>a;
+cout<<"\nEnter the second number: ";
+cin>>b;
+cout<<"\nEnter the third number: ";
+cin>>c;
+if(a>b && a>c) {
+    if(b>c)
+            cout<<b<<" is second largest number among three numbers";
+        else
+            cout<<c<<" is second largest number among three numbers";
+}
+else if(b>c && b>a) {
+    if(c>a)
+            cout<<c<<" is second largest number among three numbers";
+        else
+            cout<<a<<" is second largest number among three numbers";
+}
+else if(a>b)
+            cout<<a<<" is second largest number among three numbers";
+        else
+            cout<<b<<" is second largest number among three numbers";
+    return 0;
+}
+```
+----------------------------------------
+
+# Question 64
+
+### **Question:**
+
+> ***Write a program to calculate the sum of the two given integer values. Return three times the sum of the two values if they are equal.***
+
+----------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+using namespace std;
+int myfunc();
+int myfunc(int a, int b) {
+return a == b ? (a + b)*3 : a + b;
+}
+int main() {
+cout<<""<<myfunc(3, 5);
+cout<<"\n"<<myfunc(6, 6);
+return 0;
+}    
+
+```
+----------------------------------------
+
+# Question 65
+
+### **Question:**
+
+> ***Write a program that accepts minutes as input, and display the total number of hours and minutes.***
+
+----------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+using namespace std;
+int main() {
+int mins, hrs;
+cout<<"Input minutes: ";
+cin>>mins;
+hrs=mins/60;
+mins=mins%60;
+cout<<hrs<<" Hours,"<<mins<< " Minutes.\n";
+return 0;
+}
+```
+----------------------------------------
+
+
+# Question 66
+
+### **Question:**
+
+> ***Write a program to determine whether a positive number entered by the user is a multiple of three or five.***
+
+----------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+using namespace std;
+int main() {
+int x;
+cout<<"\nEnter a number: ";
+cin>>x;    
+if(x % 3 == 0 || x % 5 == 0) {
+cout<<"True";   
+}
+else {
+cout<<"False";    
+}
+return 0;
+}
+    
+```
+----------------------------------------
+
+
+# Question 67
+
+### **Question:**
+
+> ***Write a program to verify whether one of the two entered integers falls within the range of 100 to 200 included.***
+
+----------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+using namespace std;
+int main() {
+int x, y;
+cout<<"\nEnter the value for x: ";
+cin>>x; 
+cout<<"\nEnter the value for y: ";
+cin>>y; 
+if((x >= 100 && x <= 200) || (y >= 100 && y <= 200)) {
+cout<<"True";   
+}
+else {
+cout<<"False";    
+}
+return 0;
+}
+    
+```
+----------------------------------------
+
+# Question 68
+
+### **Question:**
+
+> ***Write a program to determine which of the two given integers is closest to the value 100. If the two numbers are equal, return 0.***
+
+----------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+using namespace std;
+int myfunc();
+int myfunc(int a, int b) {
+int x = abs(a - 100);
+int y = abs(b - 100);
+return x == y ? 0 : (x < y ? a : b);
+}
+int main() {
+cout<<" "<< myfunc(86, 99);
+cout<<"\n "<<myfunc(55, 55);
+cout<<"\n "<<myfunc(65, 80);
+return 0;
+} 
+```
+----------------------------------------
+
+# Question 69
+
+### **Question:**
+
+> ***Write a program to determine whether a positive number entered by the user is a multiple of three or five, but not both.***
+
+----------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+using namespace std;
+int main() {
+int x;
+cout<<"\nEnter a number: ";
+cin>>x;    
+if(x % 3 == 0 ^ x % 5 == 0) {
+cout<<"True";   
+}
+else {
+cout<<"False";    
+}
+return 0;
+}
+    
+```
+----------------------------------------
+
+
+# Question 70
+
+### **Question:**
+
+> ***Write a program to determine whether two entered non-negative numbers have the same last digit.***
+
+----------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+using namespace std;
+int main() {
+int x, y;
+cout<<"\nEnter the value for x: ";
+cin>>x; 
+cout<<"\nEnter the value for y: ";
+cin>>y;
+if(abs(x % 10) == abs(y % 10)) {
+cout<<"True";   
+}
+else {
+cout<<"False";    
+}
+return 0;
+}
+    
+```
+----------------------------------------
+
+# Question 71
+
+### **Question:**
+
+> ***Write a program to determine whether a given non-negative number is a multiple of 12 or it is one more than a multiple of 12.***
+
+----------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+using namespace std;
+int main() {
+int x = 43;
+if(x % 12 == 0 || x % 12 == 1) {
+cout<<"True";   
+}
+else {
+cout<<"False";    
+}
+return 0;
+}     
+```
+----------------------------------------
+
+
+# Question 72
+
+### **Question:**
+
+> ***Write a program that accepts two integers and returns true when one of them equals 6, or when their sum or difference equals 6.***
+
+----------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+using namespace std;
+int main() {
+int x, y;
+cout<<"\nEnter the value for x: ";
+cin>>x; 
+cout<<"\nEnter the value for y: ";
+cin>>y;
+if(x == 6 || y == 6 || x + y == 6 || abs(x - y) == 6) {
+cout<<"True";   
+}
+else {
+cout<<"False";    
+}
+return 0;
+}     
+```
+----------------------------------------
+
+
+# Question 73
+
+### **Question:**
+
+> ***Write a program to check whether it is possible to add two integers to get the third integer from three entered integers.***
+
+----------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+using namespace std;
+int main() {
+int x, y, z;
+cout<<"\nEnter the value for x: ";
+cin>>x; 
+cout<<"\nEnter the value for y: ";
+cin>>y;
+cout<<"\nEnter the value for z: ";
+cin>>z;
+if(x == y + z || y == x + z || z == x + y) {
+cout<<"True";   
+}
+else {
+cout<<"False";    
+}
+return 0;
+}
+    
+```
+----------------------------------------
+
+# Question 74
+
+### **Question:**
+
+> ***Write a program that converts kilometers per hour to miles per hour.***
+
+----------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+using namespace std;
+int main() {
+float kmph;    
+cout<<"Enter kilometers per hour: ";
+cin>>kmph;
+cout<<(kmph * 0.6213712)<<" miles per hour";
+return 0;
+}    
+```
+----------------------------------------
+
+
+# Question 75
+
+### **Question:**
+
+> ***Write a program to calculate area of an ellipse.***
+
+----------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+using namespace std;
+#define PI 3.141592
+int main() {
+float major, minor;
+cout<<"\nEnter length of major axis: ";
+cin>>major;
+cout<<"\nEnter length of minor axis: ";
+cin>>minor;
+cout<<"\nArea of an ellipse = "<< (PI * major * minor);
+return 0;
+}
+```
+----------------------------------------
+
+# Question 76
+
+### **Question:**
+
+> ***Write a program to calculate the sum of three given integers. Return the third value if the first two values are equal.***
+
+----------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+using namespace std;
+int myfunc();
+int myfunc(int a, int b, int c) {
+if (a == b && b == c) return 0;
+if (a == b) return c;
+if (a == c) return b;
+if (b == c) return a;
+else return a + b + c;
+}
+int main() { 
+cout<<"\n"<<myfunc(11, 11, 11);
+cout<<"\n"<<myfunc(11, 11, 16);
+cout<<"\n"<<myfunc(18, 15, 10);
+return 0;
+}
+```
+----------------------------------------
+
+
+# Question 77
+
+### **Question:**
+
+> ***Write a program to convert bytes to kilobytes.***
+
+----------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+using namespace std;
+int main() {
+int bytes;
+cout<<"\nEnter number of bytes: ";
+cin>>bytes;
+cout<<"\nKilobytes: "<<(bytes/1024);
+return 0;
+}
+
+
+```
+----------------------------------------
+
+
+# Question 78
+
+### **Question:**
+
+> ***Write a program to convert megabytes to kilobytes.***
+
+----------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+using namespace std;
+int main() {
+double megabytes, kilobytes;
+cout<<"\nInput the amount of megabytes to convert: ";
+cin>>megabytes;
+kilobytes = megabytes * 1024;
+cout<<"\nThere are "<<kilobytes<< " kilobytes in " <<megabytes<< " megabytes.";
+return 0;
+}
+```
+----------------------------------------
+
+
+# Question 79
+
+### **Question:**
+
+> ***Write a program to count the number of even elements in an integer array.***
+
+----------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+using namespace std;
+int main() {
+int array[1000], i, arr_size, even=0;
+cout<<"Input the size of the array: ";
+cin>>arr_size;
+cout<<"Enter the elements in array: \n";
+for(i=0; i<arr_size; i++) {
+cin>>array[i];
+}
  
+for(i=0; i<arr_size; i++) {
+if(array[i]%2==0) {
+    even++;
+}
+}
+cout<<"Number of even elements: "<< even;
+return 0;
+}
+
+```
+----------------------------------------
+
+
+# Question 80
+
+### **Question:**
+
+> ***Write a program to count the number of odd elements in an integer array.***
+
+----------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+using namespace std;
+int main() {
+int array[1000], i, arr_size, odd=0;
+cout<<"Input the size of the array: ";
+cin>>arr_size;
+cout<<"Enter the elements in array: \n";
+for(i=0; i<arr_size; i++) {
+cin>>array[i];
+}
  
+for(i=0; i<arr_size; i++) {
+if(array[i]%2!=0) {
+    odd++;
+}
+}
+cout<<"Number of odd elements: "<< odd;
+return 0;
+}
+```
+----------------------------------------
+
+
+# Question 81
+
+### **Question:**
+
+> ***Write a program that will accept two integers and determine whether or not they are equal.***
+
+----------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+using namespace std;
+int main() {
+int x, y;
+cout<<"Input the values for x and y: \n";
+cin>>x;
+cin>>y;
+if(x == y) {
+    cout<<"x and y are equal\n";
+}
+else {
+    cout<<"x and y are not equal\n";
+}
+return 0;
+}
+```
+----------------------------------------
+
+# Question 82
+
+### **Question:**
+
+> ***Write a program to find the third angle of a triangle if two angles are given.***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+using namespace std;
+int main() {  
+int angle1, angle2; 
+cout<<"\nEnter the first angle of the triangle: ";   
+cin>>angle1;    
+cout<<"\nEnter the second angle of the triangle: ";   
+cin>>angle2; 
+cout<<"\nThird angle of the triangle is: "<< (180 - (angle1 + angle2));  
+return 0;  
+}  
+```
+----------------------------------------
+
+
+# Question 83
+
+### **Question:**
+
+> ***Write a program to determine whether a particular year is a leap year or not.***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+using namespace std;
+int main() {
+int year;
+cout<<"Enter the year: ";
+cin>>year;
+if((year % 400) == 0) {
+cout<<year<<" is a leap year.";
+}
+else if((year % 100) == 0) {
+cout<<year<<" is a not leap year.";
+}
+else if((year % 4) == 0) {
+cout<<year<<" is a leap year.";
+}
+else {
+cout<<year<<" is not a leap year.";
+}
+return 0;
+}
+```
+----------------------------------------
+
+# Question 84
+
+### **Question:**
+
+> ***Write a program that reads the candidate's age and determine a candidate's eligibility to cast his own vote.***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include <iostream>
+using namespace std;
+int main() {
+int age;
+cout<<"\nEnter the age of the candidate: ";
+cin>>age;
+if(age<18) {
+cout<<"\nWe apologize, but the candidate is not able to cast his vote.";
+cout<<"\nAfter "<< (18-age) <<" year, the candidate would be able to cast his vote.";
+}
+else {
+cout<<"Congratulation! the candidate is qualified to cast his vote.\n";
+}
+return 0;
+}
+```
+----------------------------------------
+
+# Question 85
+
+### **Question:**
+
+> ***Write a program to Convert Yard to Foot.***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+using namespace std;
+int main() {
+float yard;
+cout<<"\nEnter the Length in Yard: ";
+cin>>yard;
+cout<<yard<<" Yard in Foot is: "<<(3*yard);
+return 0;
+}
+
+```
+----------------------------------------
+
+
+# Question 86
+
+### **Question:**
+
+> ***Write a program to convert gigabytes to megabytes.***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+using namespace std;
+int main() {
+double gigabytes, megabytes;
+cout<<"\nInput the amount of gigabytes to convert: ";
+cin>>gigabytes;
+megabytes = gigabytes*1024;
+cout<<"\nThere are "<<megabytes<<" megabytes in "<<gigabytes<<" gigabytes.";
+return 0;
+}
+
+```
+----------------------------------------
+
+# Question 87
+
+### **Question:**
+
+> ***Write a program to Convert Kilogram to Pounds.***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+using namespace std;
+int main() {
+float kg, lbs;
+cout<<"\nEnter Weight in Kilogram: ";
+cin>>kg;
+lbs = kg*2.20462;
+cout<<kg<<" Kg = "<<lbs<<" Pounds";
+return 0;
+}
+```
+----------------------------------------
+
+
+# Question 88
+
+### **Question:**
+
+> ***Write a program to Convert Kilogram to Ounce.***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+using namespace std;
+int main() {
+float kg, ounce;
+cout<<"\nEnter Weight in Kilogram: ";
+cin>>kg;
+ounce = kg*35.274;
+cout<<kg<<" Kg = "<<ounce<< " Ounce";
+return 0;
+}
+
+```
+----------------------------------------
+
+# Question 89
+
+### **Question:**
+
+> ***Write a program to Convert Pounds to Grams.***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+using namespace std;
+int main() {
+float pound, gram;
+cout<<"\nEnter Weight in Pounds: ";
+cin>>pound;
+gram = pound*453.592;
+cout<<pound<<" Pound = "<<gram<<" Grams";
+return 0;
+}
+```
+----------------------------------------
+
+
+# Question 90
+
+### **Question:**
+
+> ***Write a program  to verify whether a triangle is valid or not using angles.***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include <iostream>
+using namespace std;
+int main() {  
+int angle1, angle2, angle3, sum; 
+cout<<"\nEnter the first angle of the triangle: ";  
+cin>>angle1;  
+cout<<"\nEnter the second angle of the triangle: ";  
+cin>>angle2;
+cout<<"\nEnter the third angle of the triangle: ";  
+cin>>angle3;
+sum = angle1 + angle2 + angle3;   
+if(sum == 180) {  
+cout<<"\nThe triangle is valid.";  
+}  
+else {  
+cout<<"\nThe triangle is not valid.";  
+}
+return 0;
+} 
+```
+----------------------------------------
+
+# Question 91
+
+### **Question:**
+
+> ***Write a program to add the digits of a two-digit number that is entered by the user.***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+using namespace std;
+int main() {
+int x, y, sum = 0;
+cout<<"\nEnter a two-digit number: ";
+cin>>x;
+y = x;
+while(y != 0) {
+sum = sum + y % 10;
+y = y / 10;
+}
+cout<<"\nSum of digits of "<<x<<" is: "<<sum;
+return 0;
+}
+
+```
+----------------------------------------
+
+
+# Question 92
+
+### **Question:**
+
+> ***Write a program to verify if a character you entered is a vowel or a consonant.***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+using namespace std;
+int main() {
+char ch;
+cout<<"\nEnter a character: ";
+cin>>ch;
+if(ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' ||
+ ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U' ) {
+
+cout<<ch<<" is a vowel";
+}
+else {
+cout<<ch<<" is a consonant";
+}
+return 0;
+}
+
+```
+----------------------------------------
+
+
+# Question 93
+
+### **Question:**
+
+> ***Write a program to find factorial of a number.***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+using namespace std;
+int main() {    
+int i, fact=1, num;    
+cout<<"\nEnter a number: ";    
+cin>>num;    
+for(i=1; i<=num; i++) {    
+      fact=fact*i;    
+}    
+cout<<"\nFactorial of "<<num<<" is: "<<fact;    
+return 0;  
+}   
+```
+----------------------------------------
+
+# Question 94
+
+### **Question:**
+
+> ***Write a program to print number of days in a month.***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+using namespace std;
+int main() {
+int x[12]={31,28,31,30,31,30,31,31,30,31,30,31}, m;
+cout<<"\nEnter the month number: ";
+cin>>m;
+if(m>12 || m<1) {
+cout<<"Invalid input";
+}
+else if(m==2) {
+cout<<"\nNumber of days in month 2 is either 29 or 28";
+}
+else {
+cout<<"\nNumber of days in month "<<m<< " is: "<<x[m-1];
+}
+return 0;
+} 
+```
+----------------------------------------
+
+
+# Question 95
+
+### **Question:**
+
+> ***Write a program to concatenate two strings.***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+#include<cstring>
+using namespace std;
+int main() {
+char a[1000], b[1000];
+cout<<"\nEnter the first string: ";
+cin>>a;
+cout<<"\nEnter the second string: ";
+cin>>b;
+strcat(a, b);
+cout<<"\nString produced by concatenation is: "<< a;
+return 0;
+}
+
+```
+----------------------------------------
+
+
+# Question 96
+
+### **Question:**
+
+> ***Write a program to find maximum between two numbers.***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+using namespace std;
+int main() {
+int a,b;
+cout<<"Enter two numbers: \n";
+cin>>a;
+cin>>b;
+if(a>b) {
+cout<<a<<" is a maximum number";
+}
+else {
+cout<<b<<" is a maximum number";
+}
+return 0;
+}
+```
+----------------------------------------
+
+# Question 97
+
+### **Question:**
+
+> ***Write a program to compare two strings.***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+#include<cstring>
+using namespace std;
+int main() {
+char a[100], b[100];
+cout<<"Enter the first string: \n";
+cin>>a;
+cout<<"Enter the second string: \n";
+cin>>b;
+if (strcmp(a,b) == 0) {
+cout<<"The 2 strings are equal.\n";
+}
+else {
+cout<<"The 2 strings are not equal.\n";
+}
+return 0;
+}
+```
+----------------------------------------
+
+# Question 98
+
+### **Question:**
+
+> ***Write a program to convert the upper case letter to lower case letter.***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+using namespace std;
+int main() {
+char ch = 'G';
+char b = tolower(ch);
+cout<<ch<<" in lowercase is represented as "<< b;
+return 0;
+}
+```
+----------------------------------------
+
+
+# Question 99
+
+### **Question:**
+
+> ***Write a program to find the quotient and remainder of a entered dividend and divisor.***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+using namespace std;
+int main() {
+int dividend, divisor;
+cout<<"\nEnter dividend: ";
+cin>>dividend;
+cout<<"\nEnter divisor: ";
+cin>>divisor;
+cout<<"\nQuotient = "<< (dividend / divisor);
+cout<<"\nRemainder = "<< (dividend % divisor);
+return 0;
+}
+```
+----------------------------------------
+
+# Question 100
+
+### **Question:**
+
+> ***Write a program to determine the Size of int, float, double and char.***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+using namespace std;
+int main() {
+cout<<"Size of char is: "<<sizeof(char)<<" byte\n";
+cout<<"Size of int is: "<<sizeof(int)<<" bytes\n";
+cout<<"Size of float is: "<<sizeof(float)<<" bytes\n";
+cout<<"Size of double is: "<<sizeof(double)<<" bytes\n";
+return 0;
+}
+```
+----------------------------------------
+
+
+# Question 101
+
+### **Question:**
+
+> ***Write a program to verify the password until it is correct.***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+using namespace std;
+int main() {
+int pwd, i;
+while (i!=0) {
+cout<<"\nEnter the password: ";
+cin>>pwd;
+if(pwd==1988) {
+cout<<"The password you entered is correct";
+i=0;
+}
+else {
+cout<<"Incorrect password, try again";
+}
+cout<<"\n";
+}
+return 0;
+}
+
+```
+----------------------------------------
+
+
+# Question 102
+
+### **Question:**
+
+> ***Write a program to find absolute value of a number.***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+using namespace std;
+int main() {
+int num; 
+cout<<"Input a positive or negative number: \n";
+cin>>num;
+cout<<"\nAbsolute value of "<<"|"<<num<<"|"<<" is: "<<abs(num);
+return 0;
+} 
+
+```
+----------------------------------------
+
+
+# Question 103
+
+### **Question:**
+
+> ***Write a program that will accept a person's height in cm and classify the person based on it.***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+using namespace std;
+int main() {
+float ht;
+cout<<"\nEnter the height (in cm): ";
+cin>>ht;
+if(ht < 150.0) {
+cout<<"Dwarf.\n";
+}
+else if((ht >= 150.0) && (ht < 165.0)) {
+cout<<"Average Height.\n";
+}
+else if((ht >= 165.0) && (ht <= 195.0)) {
+cout<<"Taller.\n";
+}
+else {
+cout<<"Abnormal height.\n";
+}
+return 0;
+} 
+```
+----------------------------------------
+
+
+# Question 104
+
+### **Question:**
+
+> ***Write a program to calculate the area of different geometric shapes using switch statements.***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+using namespace std;
+int main() {
+int choice;
+float r, l, w, b, h;
+cout<<"\nEnter 1 for area of circle: ";
+cout<<"\nEnter 2 for area of rectangle: ";
+cout<<"\nEnter 3 for area of triangle: ";
+cout<<"\nEnter your choice : ";
+cin>>choice;
+
+switch(choice) {
+case 1:
+cout<<"Enter the radius of the circle: ";
+cin>>r;
+cout<<"\nArea of a circle is: " << (3.14*r*r);
+break;
+case 2:
+cout<<"Enter the length and width of the rectangle: \n";
+cin>>l;
+cin>>w;
+cout<<"\nArea of a rectangle is: "<<(l*w);
+break;
+case 3:
+cout<<"Enter the base and height of the triangle: \n";
+cin>>b;
+cin>>h;
+cout<<"\nArea of a triangle is: "<<(0.5*b*h);
+break;
+default:
+cout<<"\nPlease enter a number from 1 to 3.";
+break;
+}
+return 0;
+}
+```
+----------------------------------------
+
+# Question 105
+
+### **Question:**
+
+> ***Write a program to accept a character from the keyboard and print "Yes" if it is equal to y. Otherwise print "No".***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+using namespace std;
+int main() {
+char ch;
+cout<<"Enter a character: ";
+ch = getchar ();
+if(ch == 'y' || ch == 'Y') {
+cout<<"Yes\n";
+}
+else {
+cout<<"No\n";
+}
+return(0);
+}
+```
+----------------------------------------
+
+# Question 106
+
+### **Question:**
+
+> ***Write a program that uses bitwise operators to multiply an entered value by four.***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+using namespace std;
+int main() {
+long x, y;
+cout<<"Enter a integer: ";
+cin>>x;
+y = x;
+x = x << 2;
+cout<< y<<" x 4 = "<< x;
+return 0;
+}
+```
+----------------------------------------
+
+# Question 107
+
+### **Question:**
+
+> ***Write a program to check whether a number entered by the user is power of 2 or not.***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+using namespace std;
+int main() {
+int x;
+cout<<"Enter a number: ";
+cin>>x;
+if((x != 0) && ((x &(x - 1)) == 0)) {
+cout<<x<<" is a power of 2";
+}
+else {
+cout<<x<<" is not a power of 2";
+}
+return 0;
+}
+
+
+```
+----------------------------------------
+
+
+# Question 108
+
+### **Question:**
+
+> ***Write a program to determine whether a triangle is scalene, isosceles, or equilateral.***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+using namespace std;
+int main() {
+int side1, side2, side3;
+cout<<"\nEnter the first side of the triangle: ";
+cin>>side1;
+cout<<"\nEnter the second side of the triangle: ";
+cin>>side2;
+cout<<"\nEnter the third side of the triangle: ";
+cin>>side3;
+if(side1 == side2 && side2 == side3) {
+cout<<"\nThe given Triangle is equilateral.";
+}
+else if(side1 == side2 || side2 == side3 || side3 == side1) {
+cout<<"\nThe given Triangle is isosceles.";
+}
+else {
+cout<<"\nThe given Triangle is scalene.";
+}
+return 0;
+}
+
+
+```
+----------------------------------------
+
+
+# Question 109
+
+### **Question:**
+
+> ***Write a program to print ASCII values of all the letters of the English alphabet from A to Z.***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+using namespace std;
+int main() {
+int i;
+for(i='A'; i<='Z'; i++) {
+cout<<"ASCII value of "<<char(i)<<"="<<int(i)<<endl;
+}
+return 0;
+}
+```
+----------------------------------------
+
+
+# Question 110
+
+### **Question:**
+
+> ***Write a program to find sum of even numbers between 1 to n.***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+using namespace std;
+int main() {
+int i, num, sum=0;
+cout<<"Enter a number: ";
+cin>>num;
+for(i=2; i<=num; i=i+2) {
+sum = sum + i;
+}
+cout<<"\nSum of all even number between 1 to " <<num<< " is: "<< sum;
+return 0;
+}
+```
+----------------------------------------
+
+# Question 111
+
+### **Question:**
+
+> ***Write a program to find sum of odd numbers between 1 to n.***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+using namespace std;
+int main() {
+int i, num, sum=0;
+cout<<"Enter a number: ";
+cin>>num;
+for(i=1; i<=num; i=i+2) {
+sum = sum + i;
+}
+cout<<"\nSum of all odd number between 1 to " <<num<< " is: "<< sum;
+return 0;
+}
+```
+----------------------------------------
+
+# Question 112
+
+### **Question:**
+
+> ***Write a program to find maximum number using switch case.***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+using namespace std;
+int main() {
+int x, y;
+cout<<"Enter any two numbers: \n";
+cin>>x;
+cin>>y;
+switch(x > y) {
+case 0: cout<<y<<" is Maximum number";
+break;
+case 1: cout<<x<<" is Maximum number";
+break;
+}
+return 0;
+}
+
+```
+----------------------------------------
+
+# Question 113
+
+### **Question:**
+
+> ***Write a program that allows you to enter the cost price and the selling price of a product and calculate profit or loss.***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+using namespace std;
+int main() {
+int cp, sp; 
+cout<<"\nInput Cost Price: ";
+cin>>cp;
+cout<<"\nInput Selling Price: ";
+cin>>sp;
+if(sp > cp) {
+cout<<"Profit = "<< (sp - cp);
+}
+else if(cp > sp) {
+cout<<"Loss = "<< (cp - sp);
+}
+else {
+cout<<"No Profit No Loss.";
+}
+return 0;
+}
+
+```
+----------------------------------------
+
+
+# Question 114
+
+### **Question:**
+
+> ***Write a program that display the pattern like a right angle triangle using an asterisk.***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+using namespace std;
+int main() {
+int rows;
+cout<<"Input the number of rows: ";
+cin>>rows;
+for(int x=1; x<=rows; x++) {
+for(int y=1; y<=x; y++)
+cout<<"*";
+cout<<"\n";
+}
+return 0;
+}
+```
+----------------------------------------
+
+
+# Question 115
+
+### **Question:**
+
+> ***Write a program that display the pattern like a right angle triangle using a number.***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+using namespace std;
+int main() {
+int rows;
+cout<<"Input the number of rows: ";
+cin>>rows;
+for(int x=1; x<=rows; x++) {
+for(int y=1; y<=x; y++)
+cout<<""<<y;
+cout<<"\n";
+}
+return 0;
+}
+
+```
+----------------------------------------
+
+
+# Question 116
+
+### **Question:**
+
+> ***Write a program to determine the number and sum of all integers between 50 and 100 which are divisible by 2.***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+using namespace std;
+int main() {
+int x, sum=0;
+cout<<"Numbers between 50 and 100, divisible by 2: \n";
+for(x=51; x<100; x++) {
+if(x%2==0) {
+cout<<" "<<x;
+sum+=x;
+}
+}
+cout<<"\nThe sum: "<< sum;
+return 0;
+}
+```
+----------------------------------------
+
+# Question 117
+
+### **Question:**
+
+> ***Write a program that uses the function to determine whether a entered number is even or odd.***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+using namespace std;
+int myfunc(int x) {   
+return (x & 1);
+}
+int main() {
+int x;
+cout<<"Enter any number: ";
+cin>>x;
+if(myfunc(x)) {
+cout<<"\nThe number you entered is odd.";
+}
+else {
+cout<<"\nThe number you entered is even.";
+}
+return 0;
+}
+
+```
+----------------------------------------
+
+
+# Question 118
+
+### **Question:**
+
+> ***Write a program to find square root of a entered number.***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+#include<cmath>
+using namespace std;
+int main() {
+int x;
+cout<<"Enter any number: ";
+cin>>x;
+cout<<"Square root of "<<x<< " is: "<<(double)sqrt(x);
+return 0;
+}
+```
+----------------------------------------
+
+# Question 119
+
+### **Question:**
+
+> ***Write a program to find power of a entered number using library function.***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+#include<cmath>
+using namespace std;
+int main() {
+int x, y;
+cout<<"\nEnter the value for x: ";
+cin>>x;
+cout<<"\nEnter the value for y: ";
+cin>>y;
+cout<<x<<"^"<<y<<" = " << (long)pow(x,y);
+return 0;
+}
+```
+----------------------------------------
+
+
+# Question 120
+
+### **Question:**
+
+> ***Write a program to determine if the character entered is an alphabetic or numeric character.***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+using namespace std;
+int main() {
+char ch;
+cout<<"Enter a character: ";
+cin>>ch;
+if(isdigit(ch)) {
+cout<<ch<<" is a Digit";
+}
+else if(isalpha(ch)) {
+cout<<ch<<" is an Alphabet";
+}
+else {
+cout<<ch<<" is not an Alphabet, or a Digit";
+}
+return 0;
+}
+
+```
+----------------------------------------
+
+
+# Question 121
+
+### **Question:**
+
+> ***Write a program to determine whether the character entered is an alphanumeric character or not.***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+using namespace std;
+int main() {
+char a;
+cout<<"Enter a character: ";
+cin>>a;
+if(isalnum(a)) {
+cout<<a<<" is an alphanumeric character.";
+}
+else {
+cout<<a<<" is NOT an alphanumeric character.";
+}
+return 0;
+}
+
+```
+----------------------------------------
+
+# Question 122
+
+### **Question:**
+
+> ***Write a program to determine whether the character entered is an punctuation character or not.***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+using namespace std;
+int main() {
+char a;
+cout<<"Enter a character: ";
+cin>>a;
+if(ispunct(a)) {
+cout<<a<<" is an punctuation character.";
+}
+else {
+cout<<a<<" is NOT an punctuation character.";
+}
+return 0;
+}
+```
+----------------------------------------
+
+
+# Question 123
+
+### **Question:**
+
+> ***Write a program to check whether the entered character is a graphic character or not.***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+using namespace std;
+int main() {
+char a;
+cout<<"Enter a character: ";
+cin>>a;
+if(isgraph(a)) {
+cout<<a<<" is a graphic character.";
+}
+else {
+cout<<a<<" is NOT a graphic character.";
+}
+return 0;
+}
+```
+----------------------------------------
+
+
+# Question 124
+
+### **Question:**
+
+> ***Write a program to list all printable characters using isprint() function.***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+using namespace std;
+int main() {
+int i;
+for(i = 1; i <= 127; i++) 
+if(isprint(i)!= 0)
+cout<<" "<<char(i);
+return 0;
+}
+
+```
+----------------------------------------
+
+
+# Question 125
+
+### **Question:**
+
+> ***Write a program to check whether the entered character is a hexadecimal digit character or not.***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+using namespace std;
+int main() {
+char a;
+cout<<"Enter a character: ";
+cin>>a;
+if(isxdigit(a)) {
+cout<<a<<" is a hexadecimal digit character.";
+}
+else {
+cout<<a<<" is NOT a hexadecimal digit character.";
+}
+return 0;
+}
+
+```
+----------------------------------------
+
+# Question 126
+
+### **Question:**
+
+> ***Write a program to print ASCII value of all control characters.***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+using namespace std;
+int main() {
+int i;
+cout<<"The ASCII value of all control characters are: \n";
+for(i=0; i<=127; i++) {
+if(iscntrl(i)!=0)
+cout<<"\n  "<< i;
+}
+return 0;
+}
+
+
+```
+----------------------------------------
+
+# Question 127
+
+### **Question:**
+
+> ***Write a program to check whether the given character is a white-space character or not.***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include <iostream>
+using namespace std;
+int main() {
+char c;
+char ch = ' ';
+if(isspace(ch)) {
+    cout << "\nNot a white-space character.";
+} 
+else {
+    cout << "\nWhite-space character.";
+}
+return 0;
+}
  
- 
+```
+----------------------------------------
+
+
+# Question 128
+
+### **Question:**
+
+> ***Write a program to illustrate isprint() and iscntrl() functions.***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+using namespace std;
+int main() {
+char ch = 'a';
+if(isprint(ch)) {
+cout<<ch<<" is printable character."<<endl;
+} 
+else {
+cout<<ch<<" is not printable character."<<endl;
+}
+
+if(iscntrl(ch)) {
+cout<<ch<<" is control character."<<endl;
+} 
+else {
+cout<<ch<<" is not control character."<<endl;
+}
+return (0);
+}
+```
+----------------------------------------
+
+
+
+# Question 129
+
+### **Question:**
+
+> ***Write a program to calculate surface area of cube.***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+using namespace std;
+int main() {
+int side;
+long area;
+cout<<"\nEnter the side of cube: ";
+cin>>side;
+area = 6*side*side;
+cout<<"\nThe surface area of cube is: "<< area;
+return 0;
+}
+```
+----------------------------------------
+
+
+# Question 130
+
+### **Question:**
+
+> ***Write a program to subtract 2 numbers without using subtraction operator.***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+using namespace std;
+int main() {
+int x =6, y=3;
+cout<<x+(~y)+1;
+return 0;
+}
+```
+----------------------------------------
+
+
+# Question 131
+
+### **Question:**
+
+> ***Write a program to add 2 numbers without using addition operator.***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+using namespace std;
+int main() {
+int x =6, y=3;
+cout<<x-(~y)-1;
+return 0;
+}
+```
+----------------------------------------
+
+# Question 132
+
+### **Question:**
+
+> ***Write a program to multiply a number by 2 without using multiplication operator.***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+using namespace std;
+int main() {
+int x=2;
+cout<< (x<<1);
+return 0;
+}
+```
+----------------------------------------
+
+# Question 134
+
+### **Question:**
+
+> ***Write a program to divide a number by 2 without using division operator.***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+using namespace std;
+int main() {
+int x=12;
+cout<< (x>>1);
+return 0;
+}
+```
+----------------------------------------
+
+# Question 135
+
+### **Question:**
+
+> ***Write a program to calculate volume of sphere.***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+
+#include<iostream>
+using namespace std;
+int main() {
+int radius;
+float PI = 3.141592;
+cout<<"\nEnter the radius of sphere: ";
+cin>>radius;
+float volume = (4/3)*(PI*radius*radius*radius);
+cout<<"\nThe volume of sphere is: "<< volume;
+return 0;
+}
+```
+----------------------------------------
+
+
+# Question 136
+
+### **Question:**
+
+> ***Write a program to calculate volume of ellipsoid.***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+using namespace std;
+int main() {
+int r1, r2, r3;
+float PI = 3.141592;
+cout<<"\nEnter the radius of the ellipsoid of axis 1: ";
+cin>>r1;
+cout<<"\nEnter the radius of the ellipsoid of axis 2: ";
+cin>>r2;
+cout<<"\nEnter the radius of the ellipsoid of axis 3: ";
+cin>>r3;
+float volume = (4/3)*(PI*r1*r2*r3);
+cout<<"\nThe volume of ellipsoid is: "<< volume;
+return 0;
+}
+```
+----------------------------------------
+
+# Question 137
+
+### **Question:**
+
+> ***Write a program that uses a for loop to determine power of a number entered by the user.***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+using namespace std;
+int main() {
+int x, y;
+long power = 1;
+cout<<"\nEnter the value for x: ";
+cin>>x;
+cout<<"\nEnter the value for y: ";
+cin>>y;
+for(int i=1; i<=y; i++) {
+power = power * x;
+}
+cout<<x<<"^"<<y<<" = "<<power;
+return 0;
+}
+```
+----------------------------------------
+
+
+# Question 138
+
+### **Question:**
+
+> ***Write a program to read three numbers and find average of numbers.***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+using namespace std;
+int main() {
+int a,b,c;
+float avg;
+cout<<"\nEnter the first number: ";
+cin>>a;
+cout<<"\nEnter the second number: ";
+cin>>b;
+cout<<"\nEnter the third number: ";
+cin>>c;
+avg=(a+b+c)/3.0;
+cout<<"\nAverage of three numbers is: "<< avg;
+return 0;
+}
+```
+----------------------------------------
+
+
+# Question 139
+
+### **Question:**
+
+> ***Write a program to read integer "n" and print first three powers (n<sup>1</sup>, n<sup>2</sup>, n<sup>3</sup>).***
+
+---------------------------------------
+
+<strong>Solution: </strong>
+
+```C++ language
+#include<iostream>
+#include<cmath>
+using namespace std;
+int main() {
+int n;
+cout<<"\nEnter a number: ";
+cin>>n;
+cout<<pow(n, 1)<<" "<< pow(n, 2)<<" "<< pow(n, 3);
+return 0;
+}
+```
+----------------------------------------
+
+
  </br>
  
  <h2> Papers  </h2>
